@@ -14,7 +14,7 @@ Framework::Framework(int p_width, int p_height)
 
 
 	//Temp
-	Heightmap* aux = new Heightmap("../POC/Content/Heightmaps/2.bmp", 8);
+	Heightmap* aux = new Heightmap("../POC/Content/Heightmaps/3.bmp", 16);
 	m_sceneGraph.insert(m_sceneGraph.end(), aux);
 
 }

@@ -30,7 +30,7 @@ Heightmap::Heightmap(char* image_adress, int stepSize){
 	m_width = ilGetInteger(IL_IMAGE_WIDTH);
 	m_height = ilGetInteger(IL_IMAGE_HEIGHT);
 	
-	m_imageData = new unsigned char[m_width * m_height * 4];
+	m_imageData = new unsigned char[m_width * m_height * 5];
 	ilCopyPixels(0, 0, 0, m_width, m_height, 1, IL_RGBA, IL_UNSIGNED_BYTE, m_imageData);
 	
 	// Finally, delete the DevIL image data.
@@ -118,6 +118,7 @@ int Heightmap::GetHeight(int x, int y){
 	//y = (y % m_height);
 
 	int r = m_imageData[(4*x + (4*y * m_height))];
+
 	//int g = m_imageData[((x+1) + ((y+1) * m_height))*4];
 	//int b  = m_imageData[((x+2) + ((y+2) * m_height))*4];
 
@@ -127,7 +128,7 @@ int Heightmap::GetHeight(int x, int y){
 
 Vector3<float> Heightmap::GetColor(int x, int y){
 
-	int height = (GetHeight(x,y))/255.0f;
+	float height = (GetHeight(x,y))/255.0f;
 
 	return Vector3<float>(height, height, height);
 
