@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "Framework.h"
-#include "Heightmap.h"
+#include "FileHeightmap.h"
 #include "Vector3.h"
 #include "GL/glfw.h"
 
@@ -13,9 +13,7 @@ Framework::Framework(int p_width, int p_height)
 	camera = new Camera(Vector3<float>(0, 500, 0), Vector3<float>(0,0,0));
 
 
-	//Temp
-	Heightmap* aux = new Heightmap("../POC/Content/Heightmaps/3.bmp", 16);
-	m_sceneGraph.insert(m_sceneGraph.end(), aux);
+	
 
 }
 
@@ -57,6 +55,8 @@ void Framework::Init(){
 
 int Framework::Start(){
 	
+	Init();
+
 	while(m_isRunning){
 		DoUpdate();
 		DoRender();

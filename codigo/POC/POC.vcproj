@@ -177,6 +177,14 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Heightmask.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\main.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\POC.cpp"
 				>
 			</File>
@@ -204,11 +212,19 @@
 				Name="SceneNodes"
 				>
 				<File
-					RelativePath=".\Heightmap.cpp"
+					RelativePath=".\FaultFormation.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\FileHeightmap.cpp"
 					>
 				</File>
 				<File
 					RelativePath=".\Node.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Terrain.cpp"
 					>
 				</File>
 			</Filter>
@@ -217,10 +233,6 @@
 				>
 				<File
 					RelativePath=".\Camera.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\Vector3.cpp"
 					>
 				</File>
 			</Filter>
@@ -232,6 +244,10 @@
 			>
 			<File
 				RelativePath=".\Framework.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Heightmask.h"
 				>
 			</File>
 			<File
@@ -250,11 +266,23 @@
 				Name="SceneNodes"
 				>
 				<File
-					RelativePath=".\Heightmap.h"
+					RelativePath=".\FaultFormation.h"
+					>
+				</File>
+				<File
+					RelativePath=".\FileHeightmap.h"
 					>
 				</File>
 				<File
 					RelativePath=".\Node.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Random.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Terrain.h"
 					>
 				</File>
 			</Filter>
