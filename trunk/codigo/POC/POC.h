@@ -1,6 +1,18 @@
 #ifndef POC_H
 #define POC_H
 
-int main( int argc, char **argv );
+#include "Framework.h"
+
+class POC : public Framework{
+	
+	virtual void Init();
+
+public:
+	POC(int, int);
+
+
+
+
+};
 
 #endif

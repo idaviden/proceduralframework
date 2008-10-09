@@ -7,7 +7,8 @@
 using namespace::std;
 
 class Framework{
-private:
+
+protected:
 	int m_width;
 	int m_height;
 	
@@ -17,15 +18,15 @@ private:
 	Camera* camera;
 
 	bool m_isRunning;
+
+	Framework(int, int);
+	virtual void Init();
 	void DoUpdate();
 	void DoRender();
 	void GLConfig();
 
 public:
-	Framework(int, int);
-	void Init();
-	int Start();
-	
+	virtual int Start();
 
 };
 
