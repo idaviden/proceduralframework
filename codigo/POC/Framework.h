@@ -24,6 +24,7 @@ protected:
 	void DoUpdate();
 	void DoRender();
 	void GLConfig();
+	void Light();
 
 public:
 	virtual int Start();

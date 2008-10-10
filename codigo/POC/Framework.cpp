@@ -112,6 +112,8 @@ void Framework::GLConfig(){
 	glTranslated(-camera->m_pos.GetX(),-camera->m_pos.GetY(),-camera->m_pos.GetZ()); //translate the screen to the position of our camera
 }
 
+
+
 void Framework::DoUpdate(){
 	camera->Update();
 }
@@ -119,6 +121,7 @@ void Framework::DoUpdate(){
 void Framework::DoRender(){
 
 	GLConfig();
+	//Light();
 
 	for (m_iterator = m_sceneGraph.begin(); m_iterator != m_sceneGraph.end(); m_iterator++ )
 	{
@@ -126,4 +129,9 @@ void Framework::DoRender(){
 
 		node.Render();
 	}
+}
+
+void Framework::Light(){
+
+
 }

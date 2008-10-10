@@ -29,7 +29,7 @@ void POC::Init(){
 	*/
 	Random::Init();
 
-	FaultFormation* aux = new FaultFormation(8, 1024, 1024, 0, 100, 10, 0, 0);
+	FaultFormation* aux = new FaultFormation(8, 1024, 1024, 16, 64, 16, 2, 0.5f);
 	aux->FillHeightMap();
 	m_sceneGraph.insert(m_sceneGraph.end(), aux);
 
