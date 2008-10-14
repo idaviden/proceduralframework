@@ -10,6 +10,9 @@
 #include <stdio.h>
 #include <tchar.h>
 
+#include "gl/glew.h"
+#include "gl/glfw.h"
+
 
 
 // TODO: reference additional headers your program requires here

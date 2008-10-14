@@ -26,7 +26,32 @@ Terrain::Terrain(int stepSize, Vector3<float> position, int width, int height){
 void Terrain::Render(){
 
 	Node::Render();
+	
+	//Shaders
+	if(m_shader){
+		m_shader->begin();
+		
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, m_texture0);
+		m_shader->setUniform1ui("tex0", m_texture0, 0);
+		glDisable(GL_TEXTURE_2D);
+		
+		glActiveTexture(GL_TEXTURE1);
+		glBindTexture(GL_TEXTURE_2D, m_texture1);
+		m_shader->setUniform1ui("tex1", m_texture1, 1);
+		glDisable(GL_TEXTURE_2D);
+		
+		glActiveTexture(GL_TEXTURE2);
+		glBindTexture(GL_TEXTURE_2D, m_texture2);
+		m_shader->setUniform1ui("tex2", m_texture2, 2);
+		glDisable(GL_TEXTURE_2D);
+		
+		
+		
+		
 
+
+	}	
 
 	glBegin( GL_QUADS );
 	
@@ -50,8 +75,10 @@ void Terrain::Render(){
 	}
 
 
-
+	
 	glEnd();
+
+	if (m_shader) m_shader->end();
 
 }
 
@@ -124,6 +151,61 @@ void Terrain::RenderQuad(int x_pixel, int y_pixel){
 	color = GetColor(x, z);
 	glColor4f(color.GetX(), color.GetY(), color.GetZ(), 1.0f );
 	glVertex3i(m_position.GetX() + x,m_position.GetY() +  y,m_position.GetZ() +  z);
+
+}
+
+void Terrain::SetShader(){
+	
+	cwc::glShaderManager SM;
+
+
+	m_shader = SM.loadfromFile("multiTexture.vert","multiTexture.frag"); // load (and compile, link) from file
+
+	
+
+	if (m_shader==0) 
+         std::cout << "Error Loading, compiling or linking shader\n";
+
+	m_programObj = m_shader->GetProgramObject();
+
+	LoadTexture("../POC/Content/Textures/dirt.png", m_texture0);
+	LoadTexture("../POC/Content/Textures/grass.png", m_texture1);
+	LoadTexture("../POC/Content/Textures/snow.png", m_texture2);
+
+
+}
+
+
+void Terrain::LoadTexture(char* end, GLuint& texture){
+	//Load textures
+	ILuint image_name;
+
+	ilInit(); /* Initialization of DevIL */
+	ilGenImages(1, &image_name); /* Generation of one image name */
+	ilBindImage(image_name); /* Binding of image name */
+	if(!ilLoadImage(end)){ /* Loading of image "image.jpg" */
+		glfwTerminate();
+
+	}
+	//glActiveTexture(GL_TEXTURE0);
+	glGenTextures(1, &texture); /* Texture name generation */
+    glBindTexture(GL_TEXTURE_2D, texture); /* Binding of texture name */
+	
+	glTexImage2D(GL_TEXTURE_2D, 0, ilGetInteger(IL_IMAGE_BPP), ilGetInteger(IL_IMAGE_WIDTH), 
+					ilGetInteger(IL_IMAGE_HEIGHT), 0, ilGetInteger(IL_IMAGE_FORMAT), GL_UNSIGNED_BYTE, ilGetData());
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+
+	ilDeleteImages(1, &image_name); /* Because we have already copied image data into texture data
+    we can release memory used by image. */
 
 }
 
