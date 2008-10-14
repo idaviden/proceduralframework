@@ -2,7 +2,9 @@
 #include "Framework.h"
 #include "FileHeightmap.h"
 #include "Vector3.h"
+#include "GL/glew.h"
 #include "GL/glfw.h"
+
 
 
 Framework::Framework(int p_width, int p_height)
@@ -23,6 +25,7 @@ void Framework::Init(){
 	int ok;
 
 	glfwInit();
+
 	ok = glfwOpenWindow(
 							m_width, m_height,          // Width and height of window
 							8, 8, 8,           // Number of red, green, and blue bits for color buffer
@@ -38,6 +41,12 @@ void Framework::Init(){
         glfwTerminate();
     }
 
+	int err=glewInit();
+	if(err!=GLEW_OK)
+	{
+		glfwTerminate();
+	}
+
     // Set window title
     glfwSetWindowTitle( "POC I - Fabio Miranda" );
 
@@ -48,7 +57,8 @@ void Framework::Init(){
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LEQUAL);
 
-	//glEnable(GL_TEXTURE_2D);
+
+	glEnable(GL_TEXTURE_2D);
 
 	m_isRunning = true;
 
@@ -89,6 +99,7 @@ void Framework::GLConfig(){
     // Clear color and depht buffers
     glClearColor( 0.0f, 0.0f, 0.0f, 0.0f );
     glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
+
 
     // Set up projection matrix
     glMatrixMode( GL_PROJECTION );    // Select projection matrix

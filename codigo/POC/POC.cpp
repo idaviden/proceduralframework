@@ -53,10 +53,12 @@ void POC::Init(){
 	
 	PerlinNoise* aux = new PerlinNoise(8, Vector3<float>(0,0,0), 1024, 1024, 1, 9, 0.75);
 	aux->FillHeightMap();
+	aux->SetShader();
 	m_sceneGraph.insert(m_sceneGraph.end(), aux);
 	
 
 
 }
+
 
 

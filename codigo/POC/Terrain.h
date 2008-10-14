@@ -21,12 +21,25 @@ protected:
 	bool m_hasHeightmask;
 	Heightmask m_heightmask;
 
+
+	//Shaders
+	cwc::glShader *m_shader;
+	GLuint m_programObj;
+
+	//Textures
+	GLuint m_texture0;
+	GLuint m_texture1;
+	GLuint m_texture2;
+
 public:
 	Terrain(int, Vector3<float>, int, int);
 	virtual void FillHeightMap() = 0;
 	void SetHeightMask(Heightmask);
 	int GetHeight(int, int);
 	Vector3<float> GetColor(int, int);
+
+	void SetShader();
+	void LoadTexture(char*, GLuint&);
 
 
 };
