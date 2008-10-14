@@ -60,7 +60,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="glfw.lib opengl32.lib user32.lib glu32.lib DevIL.lib"
+				AdditionalDependencies="glfw.lib opengl32.lib user32.lib glu32.lib DevIL.lib freetype.lib"
 				LinkIncremental="2"
 				GenerateDebugInformation="true"
 				SubSystem="1"
@@ -133,7 +133,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="glfw.lib opengl32.lib user32.lib glu32.lib DevIL.lib"
+				AdditionalDependencies="glfw.lib opengl32.lib user32.lib glu32.lib DevIL.lib freetype.lib"
 				LinkIncremental="1"
 				GenerateDebugInformation="true"
 				SubSystem="1"
@@ -212,6 +212,10 @@
 				Name="SceneNodes"
 				>
 				<File
+					RelativePath=".\DynamicTerrain.cpp"
+					>
+				</File>
+				<File
 					RelativePath=".\FaultFormation.cpp"
 					>
 				</File>
@@ -221,6 +225,14 @@
 				</File>
 				<File
 					RelativePath=".\Node.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\PerlinNoise.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\StaticTerrain.cpp"
 					>
 				</File>
 				<File
@@ -266,6 +278,10 @@
 				Name="SceneNodes"
 				>
 				<File
+					RelativePath=".\DynamicTerrain.h"
+					>
+				</File>
+				<File
 					RelativePath=".\FaultFormation.h"
 					>
 				</File>
@@ -275,6 +291,14 @@
 				</File>
 				<File
 					RelativePath=".\Node.h"
+					>
+				</File>
+				<File
+					RelativePath=".\PerlinNoise.h"
+					>
+				</File>
+				<File
+					RelativePath=".\StaticTerrain.h"
 					>
 				</File>
 				<File

@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include "Camera.h"
 #include "Vector3.h"
-#include "GL/glfw.h"
 #include "math.h"
+#include "GL/glfw.h"
 
 Camera::Camera(Vector3<float> position, Vector3<float> up){
 	m_pos = position;
