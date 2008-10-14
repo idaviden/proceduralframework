@@ -48,7 +48,11 @@ void Framework::Init(){
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LEQUAL);
 
+	//glEnable(GL_TEXTURE_2D);
+
 	m_isRunning = true;
+
+	
 
 
 }
@@ -56,6 +60,7 @@ void Framework::Init(){
 int Framework::Start(){
 	
 	Init();
+
 
 	while(m_isRunning){
 		DoUpdate();
