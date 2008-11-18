@@ -28,10 +28,12 @@ void FaultFormation::FillHeightMap(){
 
 
 	float delta;
+	float height;
 	int x1, z1, x2, z2, dx1, dz1, dx2, dz2;
 
 	for(int i=0; i<m_iterNumber; i++){
 		delta = m_maxDelta - (((m_maxDelta - m_minDelta) * i) / m_iterNumber);
+		height = 0;
 
 		x1 = Random::Next(0, m_width);
 		z1 = Random::Next(0, m_height);
@@ -53,21 +55,21 @@ void FaultFormation::FillHeightMap(){
 				dz2 = z2 - z1;
 
 				if(dx2 * dz1 - dx1 * dz2 >= 0){
-
-					m_heightMap[4 * x2 + 4 * z2 * m_width] += delta;
-
-
+					height += delta;
 				}
-
 			}
-
 		}
+		//m_heightMap[4 * x2 + 4 * z2 * m_width] = height;
 
+		m_mesh->AddHeight(x2, z2 , height);
+		
 		if(m_filterStep != 0 && (i % m_filterStep) == 0)
 			FilterHeightMap();
 
 
 	}
+
+	//m_mesh->BuildVBOs();
 
 
 }
@@ -75,14 +77,18 @@ void FaultFormation::FillHeightMap(){
 //Erosion
 
 void FaultFormation::FilterHeightMap(){
-
+	
+	float height;
     // Erode rows left to right.
     for (int j = 0; j < m_height; ++j)
     {
         for (int i = 1; i < m_width; ++i)
         {
-            m_heightMap[GetArrayPosition(i, j)] = m_filterValue * m_heightMap[GetArrayPosition(i-1, j)]
-													+ (1 - m_filterValue) * m_heightMap[GetArrayPosition(i, j)];
+			
+
+            height = m_filterValue * m_mesh->GetHeight(i-1, j)
+					 + (1 - m_filterValue) * m_mesh->GetHeight(i, j);
+			m_mesh->AddHeight(i, j, height);
         }
     }
  
@@ -92,8 +98,9 @@ void FaultFormation::FilterHeightMap(){
     {
         for (int i = 0; i < m_width - 1; ++i)
         {
-            m_heightMap[GetArrayPosition(i, j)] = m_filterValue * m_heightMap[i + 1 + j * m_width]
-													+ (1 - m_filterValue) * m_heightMap[GetArrayPosition(i, j)];
+            height = m_filterValue * m_mesh->GetHeight(i+1, j)
+					+ (1 - m_filterValue) * m_mesh->GetHeight(i, j);
+			m_mesh->AddHeight(i, j, height);
         }
     }
  
@@ -103,8 +110,9 @@ void FaultFormation::FilterHeightMap(){
     {
         for (int i = 0; i < m_width; ++i)
         {
-            m_heightMap[GetArrayPosition(i, j)] = m_filterValue * m_heightMap[GetArrayPosition(i, j-1)]
-											+ (1 - m_filterValue) * m_heightMap[GetArrayPosition(i, j)];
+            height = m_filterValue * m_mesh->GetHeight(i, j-1)
+					+ (1 - m_filterValue) * m_mesh->GetHeight(i, j);
+			m_mesh->AddHeight(i, j, height);
         }
     }
 
@@ -115,8 +123,9 @@ void FaultFormation::FilterHeightMap(){
     {
         for (int i = 0; i < m_width; ++i)
         {
-            m_heightMap[GetArrayPosition(i, j)] = m_filterValue * m_heightMap[GetArrayPosition(i, j+1)]
-												+ (1 - m_filterValue) * m_heightMap[GetArrayPosition(i, j)];
+            height = m_filterValue * m_mesh->GetHeight(i, j+1)
+					+ (1 - m_filterValue) * m_mesh->GetHeight(i, j);
+			m_mesh->AddHeight(i, j, height);
         }
     }
 

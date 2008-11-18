@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-StaticTerrain::StaticTerrain(int stepSize, Vector3<float> position, int width, int height) : Terrain(stepSize, position, width, height){
+StaticTerrain::StaticTerrain(int renderStepSize, Vector3<float> position, int width, int height) : Terrain(renderStepSize, position, width, height){
 
 	
 

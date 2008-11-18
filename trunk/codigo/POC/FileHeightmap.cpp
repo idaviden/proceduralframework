@@ -10,11 +10,9 @@ using namespace std;
 
 
 
-FileHeightmap::FileHeightmap(int stepSize, Vector3<float> position, int width, int height, char* image_adress) : StaticTerrain(stepSize, position, width, height){
+FileHeightmap::FileHeightmap(int renderStepSize, Vector3<float> position, int width, int height, char* image_adress) : StaticTerrain(renderStepSize, position, width, height){
 
-	
 	m_imageAdress = image_adress;
-
 	
 
 
@@ -38,11 +36,16 @@ void FileHeightmap::FillHeightMap(){
 	m_width = ilGetInteger(IL_IMAGE_WIDTH);
 	m_height = ilGetInteger(IL_IMAGE_HEIGHT);
 	
-	m_heightMap = new unsigned char[m_width * m_height * 4];
-	ilCopyPixels(0, 0, 0, m_width, m_height, 1, IL_RGBA, IL_UNSIGNED_BYTE, m_heightMap);
+	//m_heightMap = new unsigned char[m_width * m_height * 4];
+	
+
+	ilCopyPixels(0, 0, 0, m_width, m_height, 1, IL_RGBA, IL_UNSIGNED_BYTE, m_mesh->m_heightMap);
 	
 	// Finally, delete the DevIL image data.
 	ilDeleteImage(imgId);
 
+	//m_mesh->BuildVBOs();
+
+	
 
 }
