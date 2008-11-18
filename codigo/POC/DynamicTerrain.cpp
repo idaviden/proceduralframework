@@ -9,7 +9,7 @@ using namespace std;
 
 
 
-DynamicTerrain::DynamicTerrain(int stepSize, Vector3<float> position, int width, int height) : Terrain(stepSize, m_position, width, height){
+DynamicTerrain::DynamicTerrain(int renderStepSize, Vector3<float> position, int width, int height) : Terrain(renderStepSize, position, width, height){
 
 
 }

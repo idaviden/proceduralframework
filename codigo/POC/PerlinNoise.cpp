@@ -11,13 +11,9 @@ using namespace std;
 
 
 
-PerlinNoise::PerlinNoise(int stepSize, Vector3<float> position, int width, int height, int seed, int octaves, float persistence) : DynamicTerrain(stepSize, position, width, height){
+PerlinNoise::PerlinNoise(int renderStepSize, Vector3<float> position, int width, int height, int seed, int octaves, float persistence) : DynamicTerrain(renderStepSize, position, width, height){
 
-	m_stepSize = stepSize;
 	m_hasHeightmask = false;
-	m_position = position;
-	m_width = width;
-	m_height = height;
 
 	m_octaves = octaves;
 	m_persistence = persistence;
@@ -53,16 +49,16 @@ void PerlinNoise::FillHeightMap(){
 	float i1, i2, total;
 	
 	
-	for(int x_pixel = 0; x_pixel < m_width - m_stepSize; x_pixel+= m_stepSize){
-		for(int y_pixel = 0; y_pixel < m_height - m_stepSize; y_pixel+= m_stepSize){
+	for(int x_pixel = 0; x_pixel < m_width; x_pixel++){
+		for(int y_pixel = 0; y_pixel < m_height; y_pixel++){
 			
 			total = 0.0f;
 
 			//For each octave
 			for(int i=0; i < m_octaves; i++){
 
-				xf = (float)x_pixel / (float)m_width;
-				zf = (float)y_pixel / (float)m_height;
+				xf = ((float)x_pixel + m_position.GetX()) / (float)m_width;
+				zf = ((float)y_pixel + m_position.GetZ()) / (float)m_height;
 
 
 				//Calculate frequency and amplitude
@@ -91,8 +87,9 @@ void PerlinNoise::FillHeightMap(){
 				total += CosineInterpolation(i1, i2, fracz) * amp;
 			}
 
-			m_heightMap[GetArrayPosition(x_pixel, y_pixel)] += total * 50.0f;
-				
+			//m_heightMap[GetArrayPosition(x_pixel, y_pixel)] += total * 50.0f;
+
+			m_mesh->AddHeight(x_pixel, y_pixel, total * 50.0f);
 		}
 	}
 }
