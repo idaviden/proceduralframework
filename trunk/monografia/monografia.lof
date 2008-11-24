@@ -1,5 +1,14 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de um ru\IeC {\'\i }do de Perlin.}}{14}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Grafo de cena e terrenos, com a c\^amera no Terreno 0.}}{16}{figure.3.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Grafo de cena e terrenos, com a c\^amera no Terreno 5.}}{16}{figure.3.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Visualiza\c c\~ao e gera\c c\~ao dos terrenos.}}{17}{figure.3.4}
+\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de um ru\IeC {\'\i }do de Perlin.}}{13}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Grafo de cena e terrenos, com a c\^amera no Terreno 0.}}{15}{figure.3.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Grafo de cena e terrenos, com a c\^amera no Terreno 5.}}{15}{figure.3.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Visualiza\c c\~ao e gera\c c\~ao dos terrenos.}}{16}{figure.3.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Tela com o terreno gerado.}}{17}{figure.4.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Tela com o terreno gerado (exibi\c c\~ao em \emph {wireframes}).}}{17}{figure.4.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Tela com o terreno gerado.}}{18}{figure.4.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Tela com o terreno gerado (exibi\c c\~ao em \emph {wireframes}).}}{18}{figure.4.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Mapa de altura.}}{18}{figure.4.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Tela com o terreno gerado e um mapa de altura inserido.}}{19}{figure.4.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Tela com o terreno gerado e um mapa de altura inserido (exibi\c c\~ao em \emph {wireframes}).}}{19}{figure.4.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Teste variando o n\'umero de \emph {octaves}, e o n\'umero de terrenos vizinhos fixo em 2.}}{20}{figure.4.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Teste variando o n\'umero de terrenos vizinhos, e o n\'umero de octaves fixo.}}{20}{figure.4.13}

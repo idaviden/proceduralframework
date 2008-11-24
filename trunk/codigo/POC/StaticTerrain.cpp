@@ -9,15 +9,15 @@ using namespace std;
 
 
 
-StaticTerrain::StaticTerrain(int renderStepSize, Vector3<float> position, int width, int height) : Terrain(renderStepSize, position, width, height){
+StaticTerrain::StaticTerrain(int renderStepSize, Vector3<float> color, Vector3<float> position, int width, int height) : Terrain(renderStepSize, color, position, width, height){
 
 	
 
 
 }
 
-void StaticTerrain::Render(){
+void StaticTerrain::Render(bool wireFrame){
 
-	Terrain::Render();
+	Terrain::Render(wireFrame);
 }
 

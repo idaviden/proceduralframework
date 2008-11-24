@@ -9,14 +9,14 @@ using namespace std;
 
 
 
-DynamicTerrain::DynamicTerrain(int renderStepSize, Vector3<float> position, int width, int height) : Terrain(renderStepSize, position, width, height){
+DynamicTerrain::DynamicTerrain(int renderStepSize, Vector3<float> color, Vector3<float> position, int width, int height) : Terrain(renderStepSize, color, position, width, height){
 
 
 }
 
-void DynamicTerrain::Render(){
+void DynamicTerrain::Render(bool wireFrame){
 
-	Terrain::Render();
+	Terrain::Render(wireFrame);
 }
 
 

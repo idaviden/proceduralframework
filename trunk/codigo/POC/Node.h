@@ -15,6 +15,7 @@ public:
 	vector<Node*>::iterator m_iterator;
 
 	Vector3<float> m_position;
+	Vector3<float> m_color;
 	int clicksFromCenterNode;
 	
 public:

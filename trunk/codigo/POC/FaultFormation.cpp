@@ -11,7 +11,7 @@ using namespace std;
 
 
 
-FaultFormation::FaultFormation(int stepSize, Vector3<float> position, int width, int height, float minDelta, float maxDelta, int iterNumber, int filterStep, float filterValue) : StaticTerrain(stepSize, position, width, height){
+FaultFormation::FaultFormation(int stepSize, Vector3<float> color, Vector3<float> position, int width, int height, float minDelta, float maxDelta, int iterNumber, int filterStep, float filterValue) : StaticTerrain(stepSize, color, position, width, height){
 
 	m_minDelta = minDelta;
 	m_maxDelta = maxDelta;

@@ -8,10 +8,10 @@
 
 class DynamicTerrain : public Terrain{
 protected:
-	virtual void Render();
+	virtual void Render(bool);
 
 public:
-	DynamicTerrain(int, Vector3<float>, int, int);
+	DynamicTerrain(int, Vector3<float>, Vector3<float>, int, int);
 	virtual void FillHeightMap() = 0;
 	
 	//void SetHeightMask(Heightmask);

@@ -19,7 +19,7 @@ private:
 
 
 public:
-	FaultFormation(int, Vector3<float>, int, int, float, float, int, int, float);
+	FaultFormation(int, Vector3<float>, Vector3<float>, int, int, float, float, int, int, float);
 	virtual void FillHeightMap();
 
 };

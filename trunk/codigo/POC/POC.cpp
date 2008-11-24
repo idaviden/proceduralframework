@@ -118,7 +118,7 @@ void POC::Init(){
 
 	
 	PerlinNoise* perlin;
-	perlin = new PerlinNoise(1, Vector3<float>(0,0,0), 100, 100, 11, 4, 0.5);
+	perlin = new PerlinNoise(1, Vector3<float>(1.0,1.0,1.0), Vector3<float>(0,0,0), 100, 100, 343, 16, 0.5);
 	perlin->FillHeightMap();
 	perlin->m_mesh->CopyVertexFromHeightMap();
 	perlin->m_mesh->BuildVBOs();
@@ -134,14 +134,14 @@ void POC::Init(){
 	aux->m_mesh->CopyVertexFromHeightMap();
 	aux->m_mesh->BuildVBOs();
 	*/
-	
-	FileHeightmap* file = new FileHeightmap(1, Vector3<float>(0,100,0), 100, 100, "../POC/Content/Heightmaps/3.bmp");
+	/*
+	FileHeightmap* file = new FileHeightmap(1, Vector3<float>(0.5,0.5,0.5), Vector3<float>(0,100,0), 100, 100, "../POC/Content/Heightmaps/3.bmp");
 	file->FillHeightMap();
 	file->m_mesh->CopyVertexFromHeightMap();
 	file->m_mesh->BuildVBOs();
 
 	perlin->InsertNode(file);
-
+	*/
 	
 	
 	

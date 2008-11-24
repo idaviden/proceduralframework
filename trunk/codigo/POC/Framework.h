@@ -21,6 +21,7 @@ protected:
 	bool m_isRunning;
 	bool m_wireFrame;
 
+
 	Framework(int, int);
 	virtual void Init();
 	void DoUpdate();
@@ -30,6 +31,8 @@ protected:
 	void InitLight();
 
 public:
+	
+
 	virtual int Start();
 
 };

@@ -8,11 +8,11 @@
 
 class StaticTerrain : public Terrain{
 protected:
-	virtual void Render();
+	virtual void Render(bool);
 	
 
 public:
-	StaticTerrain(int, Vector3<float>, int, int);
+	StaticTerrain(int, Vector3<float>, Vector3<float>, int, int);
 	virtual void FillHeightMap() = 0;
 	
 
