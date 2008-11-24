@@ -1,0 +1,18 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="1">
+            <File firstVisibleLine="162" xOffset="0" scrollWidth="7016" startPos="5862" endPos="5862" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\monografia.tex" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7016" startPos="161" endPos="161" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\dedicatoria.tex" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7016" startPos="361" endPos="361" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\agradecimentos.tex" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7016" startPos="257" endPos="257" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\resumo.tex" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7016" startPos="580" endPos="580" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\abstract.tex" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7016" startPos="2998" endPos="2998" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\introducao.tex" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7016" startPos="2823" endPos="2823" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\referecialTeorico.tex" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7016" startPos="513" endPos="522" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\metodologia.tex" />
+            <File firstVisibleLine="9" xOffset="0" scrollWidth="7016" startPos="1690" endPos="1690" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\resultados.tex" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="7016" startPos="471" endPos="471" selMode="0" lang="TeX" filename="E:\UFMG\poc\svn\monografia\conclusao.tex" />
+            <File firstVisibleLine="47" xOffset="0" scrollWidth="7016" startPos="3471" endPos="3471" selMode="0" lang="Normal Text" filename="E:\UFMG\poc\svn\monografia\monografia.bib" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

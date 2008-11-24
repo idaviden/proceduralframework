@@ -106,4 +106,10 @@ George Kelly and Hugh McCabe.
 \newblock Citygen: An interactive system for procedural city generation.
 \newblock In {\em Game Design \& Technology Workshop}, 2006.
 
+\bibitem{slopelighting}
+Gamedev.net - 'slope lighting' terrain.
+\newblock Disponível em:
+  \url{http://www.gamedev.net/reference/articles/article1436.asp}. Acessado em:
+  23 nov. 2008.
+
 \end{thebibliography}

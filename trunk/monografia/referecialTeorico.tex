@@ -13,7 +13,7 @@ O ruído de Perlin foi criado pelo Professor Ken Perlin, da \emph{New York Univer
 
 Para criar um ruído de Perlin, precisamos de uma função que retorne, ao longo de um eixo, números entre 0 e 1. Para gerarmos esses números, é preciso uma semente (\emph{seed}); dessa forma, em uma segunda execução, com uma mesma semente, teremos os mesmos números entre 0 e 1.
 
-A figura \ref{fig:perlin} \cite{figura_perlin} mostra três funções de ruído, criadas com diferentes valores de amplitude e frequência. A primeira função poderia ser uma representação de montanhas, a segunda de morros, a terceira de blocos de pedras. Cada função de ruído é chamada de um \emph{octave}. A soma desses ruídos é um ruído de Perlin.
+A Figura \ref{fig:perlin} \cite{figura_perlin} mostra três funções de ruído, criadas com diferentes valores de amplitude e frequência. A primeira função poderia ser uma representação de montanhas, a segunda de morros, a terceira de blocos de pedras. Cada função de ruído é chamada de um \emph{octave}. A soma desses ruídos é um ruído de Perlin.
 
 \begin{figure}[H]
 	\center{\includegraphics[width=0.5\linewidth]{img/perlin.png}}
@@ -21,5 +21,11 @@ A figura \ref{fig:perlin} \cite{figura_perlin} mostra três funções de ruído, cri
 \end{figure}
 
 \subsection{Fractal plasma}
+O fractal plasma é um outro algoritmo utilizado na geração de terrenos. Basicamente, ele inicia com um retângulo onde, na primeira iteração, cada  aresta recebe um peso aleatório, como mostra a Figura \ref{fig:plasma}. Na segunda iteração, teremos quatro retângulos, e os novos pesos serão a média dos pesos das arestas adjacentes, que pode ser acrescido de um pequeno erro (que irá determinar o númerode "montanhas" no terreno). Ao final de um número de iterações (determinado pelo usuário), cada média dos pesos irá corresponder a uma determinada altura do terreno.
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.25\linewidth]{img/plasma.png}}
+	\caption{\label{fig:plasma} Retângulo e seus quatro pontos.}
+\end{figure}
 
 
