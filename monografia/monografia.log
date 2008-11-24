@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.6) (preloaded format=pdflatex 2008.10.3)  24 NOV 2008 05:41
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.6) (preloaded format=pdflatex 2008.10.3)  24 NOV 2008 09:25
 entering extended mode
 **monografia.tex
 (monografia.tex
@@ -418,79 +418,104 @@ Overfull \hbox (42.67912pt too wide) in paragraph at lines 5--11
 
 
 
-] (monografia.toc [4
+] (monografia.toc)
+\tf@toc=\write5
+ [4
+
+
+] (monografia.lof [5
 
 
 ])
-\tf@toc=\write5
- [5] (monografia.lof)
 \tf@lof=\write6
- [6
-
-
-]
-(monografia.lot)
-\tf@lot=\write7
+ [6]
+(monografia.lsg)
+\tf@lsg=\write7
  [7
 
-] (monografia.lsg)
-\tf@lsg=\write8
- [8
-
-] (resumo.tex [9
+] (resumo.tex [8
 
 
 
-]) (abstract.tex
-[10
+]) (abstract.tex [9
 
 
 
 
 ]) (introducao.tex
 Cap\'{\i }tulo 1.
-[11
+[10
 
 
 
-]) [12] (referecialTeorico.tex
+]) [11] (referecialTeorico.tex
 Cap\'{\i }tulo 2.
-[13
+[12
 
 
 
-] <img/perlin.png, id=208, 703.62875pt x 497.86pt>
+] <img/perlin.png, id=222, 703.62875pt x 497.86pt>
 File: img/perlin.png Graphic file (type png)
  <use img/perlin.png>)
-[14 <img/perlin.png (PNG copy)>] (metodologia.tex
+[13 <img/perlin.png (PNG copy)>] (metodologia.tex
 Cap\'{\i }tulo 3.
 Package hyperref Info: bookmark level for unknown sigla defaults to 0 on input 
 line 9.
-[15
+[14
 
 
 
-] <img/grafo_cena2.png, id=229, 419.5675pt x 362.35374pt>
+] <img/grafo_cena2.png, id=243, 419.5675pt x 362.35374pt>
 File: img/grafo_cena2.png Graphic file (type png)
 
 <use img/grafo_cena2.png>
-<img/grafo_cena3.png, id=231, 571.13374pt x 362.35374pt>
+<img/grafo_cena3.png, id=245, 571.13374pt x 362.35374pt>
 File: img/grafo_cena3.png Graphic file (type png)
 
 <use img/grafo_cena3.png>
-<img/grafo_cena1.png, id=233, 1000.73875pt x 666.49pt>
+<img/grafo_cena1.png, id=247, 1000.73875pt x 666.49pt>
 File: img/grafo_cena1.png Graphic file (type png)
 
-<use img/grafo_cena1.png>) [16 <img/grafo_cena2.png (PNG copy)> <img/grafo_cena
-3.png (PNG copy)>] [17 <img/grafo_cena1.png (PNG copy)>] (resultados.tex
+<use img/grafo_cena1.png> [15 <img/grafo_cena2.png (PNG copy)> <img/grafo_cena3
+.png (PNG copy)>]) [16 <img/grafo_cena1.png (PNG copy)>] (resultados.tex
 Cap\'{\i }tulo 4.
-) [18
+<img/caps/2.png, id=260, 602.25pt x 451.6875pt>
+File: img/caps/2.png Graphic file (type png)
+ <use img/caps/2.png>
+<img/caps/3.png, id=261, 602.25pt x 451.6875pt>
+File: img/caps/3.png Graphic file (type png)
+ <use img/caps/3.png>
+<img/caps/6.png, id=262, 602.25pt x 451.6875pt>
+File: img/caps/6.png Graphic file (type png)
+ <use img/caps/6.png> [17
 
 
 
-] (conclusao.tex
+ <img/caps/2.png (PNG copy)> <img/caps/3.png (PNG copy)>]
+<img/caps/7.png, id=268, 602.25pt x 451.6875pt>
+File: img/caps/7.png Graphic file (type png)
+ <use img/caps/7.png>
+<img/heightmap.png, id=272, 100.375pt x 100.375pt>
+File: img/heightmap.png Graphic file (type png)
+ <use img/heightmap.png>
+<img/caps/4.png, id=273, 602.25pt x 451.6875pt>
+File: img/caps/4.png Graphic file (type png)
+ <use img/caps/4.png> [18 <img/caps/6.png (PNG copy)> <img/caps/7.png (PNG copy
+)> <img/heightmap.png (PNG copy)>] <img/caps/5.png, id=278, 602.25pt x 451.6875
+pt>
+File: img/caps/5.png Graphic file (type png)
+ <use img/caps/5.png>
+<img/graficos/teste1/teste1.png, id=280, 642.4pt x 481.8pt>
+File: img/graficos/teste1/teste1.png Graphic file (type png)
+
+<use img/graficos/teste1/teste1.png> [19 <img/caps/4.png (PNG copy)> <img/caps/
+5.png (PNG copy)>] <img/graficos/teste2/teste2.png, id=286, 642.4pt x 481.8pt>
+File: img/graficos/teste2/teste2.png Graphic file (type png)
+
+<use img/graficos/teste2/teste2.png>) [20 <img/graficos/teste1/teste1.png (PNG 
+copy)> <img/graficos/teste2/teste2.png (PNG copy)>] (conclusao.tex
 Cap\'{\i }tulo 5.
-) [19
+) [21
 
 
 
@@ -498,7 +523,7 @@ Cap\'{\i }tulo 5.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
  ("C:\Program Files\MiKTeX 2.6\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [20
+) [22
 
 
 ])
@@ -506,15 +531,15 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-[21] (monografia.aux (capa.aux) (folharosto.aux) (dedicatoria.aux)
+[23] (monografia.aux (capa.aux) (folharosto.aux) (dedicatoria.aux)
 (agradecimentos.aux) (epigrafe.aux) (resumo.aux) (abstract.aux) (introducao.aux
 ) (referecialTeorico.aux) (metodologia.aux) (resultados.aux) (conclusao.aux)) )
  
 Here is how much of TeX's memory you used:
- 5658 strings out of 95274
- 72980 string characters out of 1184551
- 143075 words of memory out of 1143165
- 8246 multiletter control sequences out of 60000
+ 5731 strings out of 95274
+ 74115 string characters out of 1184551
+ 143891 words of memory out of 1143981
+ 8290 multiletter control sequences out of 60000
  13529 words of font info for 33 fonts, out of 1000000 for 2000
  16 hyphenation exceptions out of 8191
  32i,5n,30p,931b,492s stack positions out of 5000i,500n,10000p,200000b,32768s
@@ -531,9 +556,9 @@ sers\Application Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 > <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.6\fonts\pk\ljf
 our\jknappen\ec\dpi600\ecbx1200.pk> <C:\Documents and Settings\All Users\Applic
 ation Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk>
-Output written on monografia.pdf (23 pages, 266687 bytes).
+Output written on monografia.pdf (25 pages, 931602 bytes).
 PDF statistics:
- 706 PDF objects out of 300000 (max. 8388607)
- 65 named destinations out of 300000 (max. 131072)
- 181 words of extra memory for PDF output out of 65536 (max. 10000000)
+ 757 PDF objects out of 300000 (max. 8388607)
+ 75 named destinations out of 300000 (max. 131072)
+ 218 words of extra memory for PDF output out of 65536 (max. 10000000)
 

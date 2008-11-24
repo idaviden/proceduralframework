@@ -1,5 +1,57 @@
 \chapter{RESULTADOS E DISCUSSÃO}
+Os algoritmos de ruído de perlin, e fractal plasma foram implementados, bem como a leitura de imagens representando mapas de altura. Para uma melhor visualização, o arcabouço possui uma movimentação básica com o mouse e teclado.
 
 
+As Figuras \ref{fig:tela2} e \ref{fig:tela3}, e \ref{fig:tela6} e \ref{fig:tela7} mostram os terrenos gerados variando o número de iterações do ruído de Perlin e o número de terrenos vizinhos exibidos.
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/caps/2.png}}
+	\caption{\label{fig:tela2} Tela com o terreno gerado.}
+\end{figure}
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/caps/3.png}}
+	\caption{\label{fig:tela3} Tela com o terreno gerado (exibição em \emph{wireframes}).}
+\end{figure}
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/caps/6.png}}
+	\caption{\label{fig:tela6} Tela com o terreno gerado.}
+\end{figure}
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/caps/7.png}}
+	\caption{\label{fig:tela7} Tela com o terreno gerado (exibição em \emph{wireframes}).}
+\end{figure}
+
+As Figuras \ref{fig:tela4} e \ref{fig:tela5} mostram um terreno gerado proceduralmente e o mapa de altura exibido na Figura \ref{fig:mapaaltura} inserido no arcabouço (mostrado no arcabouço em um tom cinza mais escuro).
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.25\linewidth]{img/heightmap.png}}
+	\caption{\label{fig:mapaaltura} Mapa de altura.}
+\end{figure}
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/caps/4.png}}
+	\caption{\label{fig:tela4} Tela com o terreno gerado e um mapa de altura inserido.}
+\end{figure}
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/caps/5.png}}
+	\caption{\label{fig:tela5} Tela com o terreno gerado e um mapa de altura inserido (exibição em \emph{wireframes}).}
+\end{figure}
 
 
+Alguns testes foram feitos, para avaliar a variação de frames por segundo (\sigla{FPS}{Frames por segundo}) com a alteração de alguns parâmetros. O primeiro teste (Figura \ref{fig:teste1}) mostra o impacto na mudança do número de \emph{octaves}, considerando o número de terrenos vizinhos fixo em 2. As quedas abruptas de rendimento significam momentos em que a geração dos novos terrenos está acontecendo. Quanto maior o número de \emph{octaves}, maior o número de vértices da malha do terreno; explicando assim o FPS menor.
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/graficos/teste1/teste1.png}}
+	\caption{\label{fig:teste1} Teste variando o número de \emph{octaves}, e o número de terrenos vizinhos fixo em 2.}
+\end{figure}
+
+O segundo teste (Figura \ref{fig:teste2}) mostra o impacto variando o número de terrenos vizinhos. Como era de se esperar, quanto maior o número de vizinhos, menor o FPS.
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/graficos/teste2/teste2.png}}
+	\caption{\label{fig:teste2} Teste variando o número de terrenos vizinhos, e o número de octaves fixo.}
+\end{figure}

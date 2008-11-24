@@ -38,7 +38,7 @@ protected:
 	GLuint m_texture2;
 
 public:
-	Terrain(int, Vector3<float>, int, int);
+	Terrain(int, Vector3<float>, Vector3<float>, int, int);
 	~ Terrain();
 
 

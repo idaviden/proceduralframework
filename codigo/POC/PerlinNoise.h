@@ -14,7 +14,7 @@ protected:
 	int m_seed;
 
 public:
-	PerlinNoise(int, Vector3<float>, int, int, int, int, float);
+	PerlinNoise(int, Vector3<float>, Vector3<float>, int, int, int, int, float);
 	virtual void FillHeightMap();
 	float CosineInterpolation(float, float, float);
 	float GetNoise(int);

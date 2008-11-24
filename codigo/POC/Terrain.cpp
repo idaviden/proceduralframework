@@ -11,9 +11,10 @@ using namespace std;
 
 
 
-Terrain::Terrain(int renderStepSize, Vector3<float> position, int width, int height){
+Terrain::Terrain(int renderStepSize, Vector3<float> color, Vector3<float> position, int width, int height){
 
 
+	m_color = color;
 	m_hasHeightmask = false;
 	m_position = position;
 	//m_heightmask = null;
@@ -21,7 +22,7 @@ Terrain::Terrain(int renderStepSize, Vector3<float> position, int width, int hei
 	m_height = height;
 	//m_heightMap = new unsigned char[m_width * m_height * 4];]
 
-	m_mesh = new Mesh(position, width, height);
+	m_mesh = new Mesh(color, position, width, height);
 
 	m_renderStepSize = renderStepSize;
 
@@ -160,8 +161,9 @@ void Terrain::Render(bool wireFrame){
 	//glVertexPointer( 3, GL_FLOAT, 0, m_mesh->m_vertices );
 
 	if(wireFrame)
-		glDrawArrays( GL_QUADS, 0, m_mesh->m_vertexCount);
+		glDrawArrays( GL_LINES, 0, m_mesh->m_vertexCount);
 	else
+		glDrawArrays( GL_QUADS, 0, m_mesh->m_vertexCount);
 
 
 	glDisableClientState(GL_VERTEX_ARRAY);

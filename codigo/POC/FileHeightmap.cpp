@@ -10,7 +10,7 @@ using namespace std;
 
 
 
-FileHeightmap::FileHeightmap(int renderStepSize, Vector3<float> position, int width, int height, char* image_adress) : StaticTerrain(renderStepSize, position, width, height){
+FileHeightmap::FileHeightmap(int renderStepSize, Vector3<float> color, Vector3<float> position, int width, int height, char* image_adress) : StaticTerrain(renderStepSize, color, position, width, height){
 
 	m_imageAdress = image_adress;
 	

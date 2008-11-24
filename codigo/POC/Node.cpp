@@ -11,7 +11,7 @@ Node::Node(){
 
 }
 
-void Node::Render(){
+void Node::Render(bool wireFrame){
 
 	//cout << &(this->m_children);
 	//cout << "\n";
@@ -23,7 +23,7 @@ void Node::Render(){
 
 		Node& node = **m_iterator;
 
-		node.Render();
+		node.Render(wireFrame);
 
 
 		

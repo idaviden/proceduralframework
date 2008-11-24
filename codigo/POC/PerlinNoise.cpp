@@ -11,7 +11,7 @@ using namespace std;
 
 
 
-PerlinNoise::PerlinNoise(int renderStepSize, Vector3<float> position, int width, int height, int seed, int octaves, float persistence) : DynamicTerrain(renderStepSize, position, width, height){
+PerlinNoise::PerlinNoise(int renderStepSize, Vector3<float> color, Vector3<float> position, int width, int height, int seed, int octaves, float persistence) : DynamicTerrain(renderStepSize, color, position, width, height){
 
 	m_hasHeightmask = false;
 
@@ -40,8 +40,8 @@ void PerlinNoise::GenerateNeighbours(Node* oldNode){
 	
 
 	PerlinNoise* aux;
-	int num_terrain_x = 2;
-	int num_terrain_y = 2;
+	int num_terrain_x = 4;
+	int num_terrain_y = 4;
 
 	
 	//cout << "Generated!";
@@ -75,7 +75,7 @@ void PerlinNoise::GenerateNeighbours(Node* oldNode){
 				
 
 				if(generated == false){
-					aux = new PerlinNoise(1, Vector3<float>(i,0,j), this->m_width, this->m_height, this->m_seed, this->m_octaves, this->m_persistence);
+					aux = new PerlinNoise(1, Vector3<float>(1.0,1.0,1.0), Vector3<float>(i,0,j), this->m_width, this->m_height, this->m_seed, this->m_octaves, this->m_persistence);
 					aux->FillHeightMap();
 					aux->m_mesh->CopyVertexFromHeightMap();
 					aux->m_mesh->BuildVBOs();

@@ -12,7 +12,7 @@ Framework::Framework(int p_width, int p_height)
 	m_width = p_width;
 	m_height = p_height;
 
-	camera = new Camera(Vector3<float>(10, 500, 10), Vector3<float>(0,0,0));
+	camera = new Camera(Vector3<float>(10, 250, 10), Vector3<float>(0,0,0));
 
 
 	
@@ -108,7 +108,7 @@ void Framework::GLConfig(){
     glViewport( 0, 0, m_width, m_height );
 
     // Clear color and depht buffers
-    glClearColor( 0.0f, 0.0f, 0.0f, 0.0f );
+    glClearColor( 1.0f, 1.0f, 1.0f, 0.0f );
     glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
 
 
@@ -150,9 +150,14 @@ void Framework::GLConfig(){
 void Framework::DoUpdate(){
 	camera->Update();
 
-	if(glfwGetKey( 'Q' )){
-		m_wireFrame = ~m_wireFrame;
 
+	//Keyboard
+	if(glfwGetKey( '1' )){
+		m_wireFrame = true;
+
+	}
+	if(glfwGetKey( '2' )){
+		m_wireFrame = false;
 	}
 
 }
@@ -162,7 +167,7 @@ void Framework::DoRender(){
 	GLConfig();
 	
 	//Light
-	Framework::InitLight();
+	//Framework::InitLight();
 
 	
 	m_currentNode->Render(m_wireFrame);

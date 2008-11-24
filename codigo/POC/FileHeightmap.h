@@ -10,7 +10,7 @@ private:
 	char* m_imageAdress;
 
 public:
-	FileHeightmap(int, Vector3<float>, int, int, char *);
+	FileHeightmap(int, Vector3<float>, Vector3<float>, int, int, char *);
 	virtual void FillHeightMap();
 
 };

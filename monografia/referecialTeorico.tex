@@ -13,7 +13,7 @@ O ruído de Perlin foi criado pelo Professor Ken Perlin, da \emph{New York Univer
 
 Para criar um ruído de Perlin, precisamos de uma função que retorne, ao longo de um eixo, números entre 0 e 1. Para gerarmos esses números, é preciso uma semente (\emph{seed}); dessa forma, em uma segunda execução, com uma mesma semente, teremos os mesmos números entre 0 e 1.
 
-A figura \ref{fig:perlin} \cite{figura_perlin} mostra três funções de ruído, criadas com diferentes valores de amplitude e frequência. A primeira função poderia ser uma representação de montanhas, a segunda de morros, a terceira de blocos de pedras. A soma desses ruídos é um ruído de Perlin.
+A figura \ref{fig:perlin} \cite{figura_perlin} mostra três funções de ruído, criadas com diferentes valores de amplitude e frequência. A primeira função poderia ser uma representação de montanhas, a segunda de morros, a terceira de blocos de pedras. Cada função de ruído é chamada de um \emph{octave}. A soma desses ruídos é um ruído de Perlin.
 
 \begin{figure}[H]
 	\center{\includegraphics[width=0.5\linewidth]{img/perlin.png}}
