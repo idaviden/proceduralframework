@@ -1,0 +1,25 @@
+
+\chapter{REFERENCIAL TEÓRICO}
+
+Vários trabalhos publicados abordam a geração procedural de modelos. Alguns destes trabalhos abordam a geração de cidades (\cite{parish} e \cite{pseudoinfinite}), outros abordam a geração de terrenos realistas (em tempo-real, como os trabalhos \cite{realtime} e \cite{virtual}, ou não, como o \emph{MojoWorld}\cite{mojoworld}), ou então a geração de árvores \cite{speedtree}. A principal referência na área é o livro \emph{Texturing and Modeling: A Procedural Approach} \cite{livro}, em que é explicada a geração procedural de diversos tipos de modelos.
+
+Algumas técnicas largamente utilizadas na geração procedural são: Sistemas de Lindenmayer (\emph{l-System})\cite{lsystem}, que, através de uma gramática, modela o crescimento de plantas; geometrias fractais \cite{geometrias}; e também ruído de Perlin (\emph{perlin noise}\cite{perlin}), que será abordado na próxima seção.
+
+\section{Terrenos fractais}
+Existem uma série de técnicas para criação de terrenos fractais, como \emph{perlin noise} e o algoritmo \emph{fractal plasma}, detalhados a seguir.
+
+\subsection{Ruído de Perlin}
+O ruído de Perlin foi criado pelo Professor Ken Perlin, da \emph{New York University}. O ruído é usado para simular estruturas naturais, como núvens, texturas de árvores, e terrenos.
+
+Para criar um ruído de Perlin, precisamos de uma função que retorne, ao longo de um eixo, números entre 0 e 1. Para gerarmos esses números, é preciso uma semente (\emph{seed}); dessa forma, em uma segunda execução, com uma mesma semente, teremos os mesmos números entre 0 e 1.
+
+A figura \ref{fig:perlin} \cite{figura_perlin} mostra três funções de ruído, criadas com diferentes valores de amplitude e frequência. A primeira função poderia ser uma representação de montanhas, a segunda de morros, a terceira de blocos de pedras. A soma desses ruídos é um ruído de Perlin.
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/perlin.png}}
+	\caption{\label{fig:perlin} Exemplo de um ruído de Perlin.}
+\end{figure}
+
+\subsection{Fractal plasma}
+
+

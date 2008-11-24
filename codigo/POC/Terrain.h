@@ -7,13 +7,15 @@
 #include "Mesh.h"
 
 class Terrain : public Node{
+
+
 protected:
 	//void RenderQuad(int, int);
 	//int GetArrayPosition(int, int);
-	virtual void Render();
+	virtual void Render(bool);
 
-	vector<Node*> m_children;
-	vector<Node*>::iterator m_iterator;
+
+
 	
 
 	
@@ -39,7 +41,7 @@ public:
 	Terrain(int, Vector3<float>, int, int);
 	~ Terrain();
 
-	Vector3<float> m_position;
+
 	//VBO
 	Mesh* m_mesh;
 
@@ -51,6 +53,10 @@ public:
 	void SetShader();
 	void LoadTexture(char*, GLuint&, GLuint);
 	void Normalize(float, float);
+	bool IsWithin(Vector3<float>);
+	void InsertNode(Node*);
+	Node* FindCurrentStandingNode(Vector3<float>);
+	
 
 
 };

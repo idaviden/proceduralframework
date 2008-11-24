@@ -35,9 +35,46 @@ Terrain :: ~Terrain()
 	m_mesh = NULL;
 }
 
-void Terrain::Render(){
+void Terrain::InsertNode(Node* node){
 
-	Node::Render();
+	this->m_children.insert(m_children.end(), node);
+
+	//cout << " Memoria: ";
+	//cout << &(*m_children[0]);
+
+
+	//cout << "\n";
+
+
+
+}
+
+Node* Terrain::FindCurrentStandingNode(Vector3<float> cam_position){
+	
+	for (m_iterator = m_children.begin(); m_iterator != m_children.end(); m_iterator++ )
+	{
+
+		Node& node = **m_iterator;
+		
+		if(node.IsWithin(cam_position)){
+			cout << "caiu!!";
+
+			node.GenerateNeighbours(this);
+
+			return &node;
+
+
+		}	
+	}
+
+	return NULL;
+
+
+}
+
+void Terrain::Render(bool wireFrame){
+
+	Node::Render(wireFrame);
 	
 	
 	
@@ -70,27 +107,9 @@ void Terrain::Render(){
 	
 	
 	//Shaders
-	
+	/*
 	if(m_shader){
 		m_shader->begin();
-		
-		/*
-		glActiveTexture(GL_TEXTURE0);
-	glBindTexture(GL_TEXTURE_2D, m_texture0);
-		m_shader->setUniform1ui("tex0", 0);
-		//glDisable(GL_TEXTURE_2D);
-		
-		glActiveTexture(GL_TEXTURE1);
-	glBindTexture(GL_TEXTURE_2D, m_texture1);
-		m_shader->setUniform1ui("tex1", 1);
-		//glDisable(GL_TEXTURE_2D);
-		
-		
-		glActiveTexture(GL_TEXTURE2);
-	glBindTexture(GL_TEXTURE_2D, m_texture2);
-		m_shader->setUniform1ui("tex2", 2);
-		//glDisable(GL_TEXTURE_2D);
-		*/
 
 		glActiveTextureARB(GL_TEXTURE0_ARB);
 		glEnable(GL_TEXTURE_2D);
@@ -112,10 +131,15 @@ void Terrain::Render(){
 		
 		
 	}	
+	*/
 	
-	
+	//Light
+	/*
+	glEnable(GL_COLOR_MATERIAL);
+	glColorMaterial ( GL_FRONT, GL_AMBIENT_AND_DIFFUSE ) ;
+	glColor3f(.55,.55,.55);
+	*/
 
-	
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_COLOR_ARRAY);
 	glEnableClientState( GL_TEXTURE_COORD_ARRAY );
@@ -130,18 +154,22 @@ void Terrain::Render(){
 	glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_mesh->m_vboTexCoord); //texCoords
 	glTexCoordPointer(3, GL_FLOAT, 0, (char *) NULL);
 	
-
+	
 
 	//temp:
 	//glVertexPointer( 3, GL_FLOAT, 0, m_mesh->m_vertices );
-	glDrawArrays( GL_QUADS, 0, m_mesh->m_vertexCount);
+
+	if(wireFrame)
+		glDrawArrays( GL_QUADS, 0, m_mesh->m_vertexCount);
+	else
+
 
 	glDisableClientState(GL_VERTEX_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
 	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
 
 
-	if (m_shader) m_shader->end();
+	//if (m_shader) m_shader->end();
 
 
 	
@@ -182,6 +210,23 @@ void Terrain::SetHeightMask(Heightmask heightmask){
 	m_heightmask = heightmask;
 
 }
+
+
+
+
+
+bool Terrain::IsWithin(Vector3<float> position){
+	
+	if(position.GetX() > this->m_position.GetX() && position.GetX() < this->m_position.GetX() + this->m_width)
+		if(position.GetZ() > this->m_position.GetZ() && position.GetZ() < this->m_position.GetZ() + this->m_height)
+			return true;
+
+
+	return false;
+
+
+}
+
 
 void Terrain::Normalize(float maxHeight, float minHeight){
 

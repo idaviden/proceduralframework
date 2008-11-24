@@ -36,6 +36,69 @@ float PerlinNoise::GetNoise(int i){
 	return (1.0f - ((i * (i * i * 15731 + 789221) + 1376312589) & 0x7FFFFFFF) / 1073741824.0f);
 }
 
+void PerlinNoise::GenerateNeighbours(Node* oldNode){
+	
+
+	PerlinNoise* aux;
+	int num_terrain_x = 2;
+	int num_terrain_y = 2;
+
+	
+	//cout << "Generated!";
+	//cout << "\n";
+
+
+	int count = 0;
+	bool generated = false;
+	for(int i=this->m_position.GetX() - this->m_width*num_terrain_x; i <= this->m_position.GetX() + num_terrain_x*this->m_width; i+=this->m_width){
+		for(int j=this->m_position.GetZ() - this->m_height*num_terrain_y; j <= this->m_position.GetZ() + num_terrain_y*this->m_height; j+=this->m_height){
+
+			generated = false;
+			//Only generate the neighbours
+			if(i != this->m_position.GetX() || j != this->m_position.GetZ()){
+				
+				//Check if they have been already generated
+				if(oldNode != NULL){
+					for (m_iterator = oldNode->m_children.begin(); m_iterator != oldNode->m_children.end(); m_iterator++ )
+					{
+
+						Node* node = *m_iterator;
+						
+						if(node->m_position.GetX() == i && node->m_position.GetZ() == j){
+							this->InsertNode(node);
+							generated = true;
+
+						}
+					}
+
+				}
+				
+
+				if(generated == false){
+					aux = new PerlinNoise(1, Vector3<float>(i,0,j), this->m_width, this->m_height, this->m_seed, this->m_octaves, this->m_persistence);
+					aux->FillHeightMap();
+					aux->m_mesh->CopyVertexFromHeightMap();
+					aux->m_mesh->BuildVBOs();
+					//aux->SetShader();
+
+					this->InsertNode(aux);
+					count ++;
+				}
+			}
+		}
+
+	}
+
+	delete oldNode;
+	oldNode = NULL;
+
+
+	//cout << "Terrains generated: ";
+	//cout << count;
+	//cout << "\n";
+
+}
+
 void PerlinNoise::FillHeightMap(){
 
 
@@ -89,7 +152,7 @@ void PerlinNoise::FillHeightMap(){
 
 			//m_heightMap[GetArrayPosition(x_pixel, y_pixel)] += total * 50.0f;
 
-			m_mesh->AddHeight(x_pixel, y_pixel, total * 50.0f);
+			m_mesh->AddHeight(x_pixel, y_pixel, total * 20.0f);
 		}
 	}
 }

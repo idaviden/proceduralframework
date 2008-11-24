@@ -21,6 +21,17 @@ public:
 	void AddX(const T& value) { X += value; }
 	void AddY(const T& value) { Y += value; }
 	void AddZ(const T& value) { Z += value; }
+
+
+	bool equals(Vector3<T> value){
+		if(this->X == value.GetX() && this->Y == value.GetY() && this->Z == value.GetZ())
+			return true;
+		else
+			return false;
+
+
+	}
+
 };
 
 

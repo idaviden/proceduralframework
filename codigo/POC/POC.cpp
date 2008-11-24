@@ -19,6 +19,7 @@ POC::POC(int p_width, int p_height) : Framework(p_width, p_height)
 
 void POC::Init(){
 	Framework::Init();
+	Random::Init();
 
 	//Temp
 	/*
@@ -65,26 +66,85 @@ void POC::Init(){
 	//aux->SetShader();
 	m_sceneGraph.insert(m_sceneGraph.end(), aux);
 	*/
-	
+	/*
 
 	PerlinNoise* aux;
 	int tamanho_terreno = 100;
-
-	for(int i=0; i<500; i+=tamanho_terreno){
-		for(int j=0; j<500; j+=tamanho_terreno){
-			aux = new PerlinNoise(1, Vector3<float>(i,0,j), tamanho_terreno, tamanho_terreno, 13, 1, 0.5);
+	int num_terrenos_x = 1;
+	int num_terrenos_y = 1;
+	
+	for(int i=0; i<num_terrenos_x * tamanho_terreno; i+=tamanho_terreno){
+		for(int j=0; j<num_terrenos_y * tamanho_terreno; j+=tamanho_terreno){
+			aux = new PerlinNoise(1, Vector3<float>(0,0,0), tamanho_terreno, tamanho_terreno, 13, 1, 0.5);
 			aux->FillHeightMap();
 			aux->m_mesh->CopyVertexFromHeightMap();
 			aux->m_mesh->BuildVBOs();
-			aux->SetShader();
-			m_sceneGraph.insert(m_sceneGraph.end(), aux);
+			//aux->SetShader();
+			aux->GenerateNeighbours(NULL);
+			//m_sceneGraph.insert(m_sceneGraph.end(), aux);
+			
+			
+			cout << "&aux->m_children: ";
+			cout << &(aux->m_children);
+			cout << " aux: ";
+			cout << &(*aux);
+			cout << " &aux: ";
+			cout << &(aux);
+			cout << " Size: ";
+			cout << aux->m_children.size();
+			cout << "\n";
+
+			//cout << " tamanho_terreno: ";
+			//cout << tamanho_terreno;
+			//cout << " &tamanho_terreno: ";
+			//cout << &tamanho_terreno;
+			//cout << "\n";
+			
+			cout << "&m_sceneGraph[0]->m_children: ";
+			cout << &(m_sceneGraph[0]->m_children);
+			cout << " m_sceneGraph[0]: ";
+			cout << &(*m_sceneGraph[0]);
+			cout << " &m_sceneGraph[0]: ";
+			cout << &(m_sceneGraph[0]);
+			cout << " Size: ";
+			cout << m_sceneGraph[0]->m_children.size();
+			cout << "\n";
+			
+			m_currentNode = aux;
 
 		}
-
-
-		
-
 	}
+	*/
+
+	
+	PerlinNoise* perlin;
+	perlin = new PerlinNoise(1, Vector3<float>(0,0,0), 100, 100, 11, 4, 0.5);
+	perlin->FillHeightMap();
+	perlin->m_mesh->CopyVertexFromHeightMap();
+	perlin->m_mesh->BuildVBOs();
+	//aux->SetShader();
+	perlin->GenerateNeighbours(NULL);
+
+	m_currentNode = perlin;
+	
+	/*
+	FaultFormation* aux;
+	aux = new FaultFormation(16, Vector3<float>(0,0,0), 512, 512, 16, 64, 8, 2, 0.5f);
+	aux->FillHeightMap();
+	aux->m_mesh->CopyVertexFromHeightMap();
+	aux->m_mesh->BuildVBOs();
+	*/
+	
+	FileHeightmap* file = new FileHeightmap(1, Vector3<float>(0,100,0), 100, 100, "../POC/Content/Heightmaps/3.bmp");
+	file->FillHeightMap();
+	file->m_mesh->CopyVertexFromHeightMap();
+	file->m_mesh->BuildVBOs();
+
+	perlin->InsertNode(file);
+
+	
+	
+	
 	
 
 
