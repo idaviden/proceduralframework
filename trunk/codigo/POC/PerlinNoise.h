@@ -18,6 +18,7 @@ public:
 	virtual void FillHeightMap();
 	float CosineInterpolation(float, float, float);
 	float GetNoise(int);
+	void GenerateNeighbours(Node*);
 
 
 };

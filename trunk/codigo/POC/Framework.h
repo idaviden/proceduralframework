@@ -12,12 +12,14 @@ protected:
 	int m_width;
 	int m_height;
 	
-	vector<Node*> m_sceneGraph;
-	vector<Node*>::iterator m_iterator;
+	//vector<Node*> m_sceneGraph;
+	//vector<Node*>::iterator m_iterator;
 
 	Camera* camera;
+	Node* m_currentNode;
 
 	bool m_isRunning;
+	bool m_wireFrame;
 
 	Framework(int, int);
 	virtual void Init();
@@ -25,6 +27,7 @@ protected:
 	void DoRender();
 	void GLConfig();
 	void Light();
+	void InitLight();
 
 public:
 	virtual int Start();

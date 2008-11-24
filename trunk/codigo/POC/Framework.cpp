@@ -12,7 +12,7 @@ Framework::Framework(int p_width, int p_height)
 	m_width = p_width;
 	m_height = p_height;
 
-	camera = new Camera(Vector3<float>(0, 500, 0), Vector3<float>(0,0,0));
+	camera = new Camera(Vector3<float>(10, 500, 10), Vector3<float>(0,0,0));
 
 
 	
@@ -62,6 +62,17 @@ void Framework::Init(){
 
 	m_isRunning = true;
 
+
+	
+
+
+
+
+
+
+	
+	
+
 	
 
 
@@ -105,7 +116,7 @@ void Framework::GLConfig(){
     glMatrixMode( GL_PROJECTION );    // Select projection matrix
     glLoadIdentity();                 // Start with an identity matrix
     gluPerspective(                   // Set perspective view
-        65.0,                         // Field of view = 65 degrees
+        90.0,                         // Field of view = 65 degrees
         (double)m_width/(double)m_height, // Window aspect (assumes square pixels)
         1.0,                          // Near Z clipping plane
         10000.0                         // Far Z clippling plane
@@ -121,33 +132,105 @@ void Framework::GLConfig(){
         0.0, 1.0, 0.0                 // Up-vector (x,y,z)
     );
 	*/
+
+
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
 	glRotatef(camera->m_rotation.GetX(),1.0,0.0,0.0); //rotate our camera on teh x-axis (left and right)
 	glRotatef(camera->m_rotation.GetY(),0.0,1.0,0.0); //rotate our camera on the y-axis (up and down)
 	glTranslated(-camera->m_pos.GetX(),-camera->m_pos.GetY(),-camera->m_pos.GetZ()); //translate the screen to the position of our camera
+
+
+
+	
 }
 
 
 
 void Framework::DoUpdate(){
 	camera->Update();
+
+	if(glfwGetKey( 'Q' )){
+		m_wireFrame = ~m_wireFrame;
+
+	}
+
 }
 
 void Framework::DoRender(){
 
 	GLConfig();
-	//Light();
+	
+	//Light
+	Framework::InitLight();
 
+	
+	m_currentNode->Render(m_wireFrame);
+
+
+	//See if the camera is on another node. If so, we have to generate its neighbours
+	if(m_currentNode->IsWithin(camera->m_pos) == false){
+
+		m_currentNode = m_currentNode->FindCurrentStandingNode(camera->m_pos);
+	}
+
+	/*
 	for (m_iterator = m_sceneGraph.begin(); m_iterator != m_sceneGraph.end(); m_iterator++ )
 	{
 		Node& node = **m_iterator;
 
+		//cout << &node;
+		//cout << "\n";
+
 		node.Render();
+
+		
+		//See if the camera is on the node
+		if(node.IsWithin(camera->m_pos)){
+
+			//See if the node is different from the last one (so we have to generate more patchs)
+			if(m_currentNode->m_position.equals(node.m_position) == false){
+				//cout << "caiu";
+
+				node.GenerateNeighbours(m_currentNode);
+
+
+				m_currentNode = &node;
+
+			}
+
+			//node.GenerateNeighbours();
+		}
 	}
+	*/
+
+	
 }
 
-void Framework::Light(){
+void Framework::InitLight(){
+	//Light
+	
+	glEnable(GL_LIGHT0);
+	//glDepthFunc(GL_LESS);
+	//glEnable(GL_DEPTH_TEST);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_COLOR_MATERIAL);
+
+
+	GLfloat light_ambient[] =
+	{0.0, 0.0, 0.0, 1.0};
+	GLfloat light_diffuse[] =
+	{1.0, 1.0, 1.0, 1.0};
+	GLfloat light_specular[] =
+	{1.0, 1.0, 1.0, 1.0};
+	GLfloat light_position[] =
+	{0.0, 10.0, -25.0, 0.0};
+
+	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
+	glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
+	glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+	
 
 
 }

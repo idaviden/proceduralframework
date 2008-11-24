@@ -1,0 +1,34 @@
+\chapter{METODOLOGIA}
+
+\section{Tipo de Pesquisa}
+O trabalho proposto é uma pesquisa de natureza aplicada, pois busca aplicar um conhecimento teórico (técnicas de geração procedural) e obter um resultado prático na forma de um arcabouço e tem um  objetivo exploratório. A pesquisa se dá em laboratório, pois se trata de um ambiente controlado.
+
+
+\section{Procedimentos metodológicos}
+
+O primeiro passo do trabalho foi a escolha de uma \emph{Application Programming Interface} (\sigla{API}{Application Programming Interface}). Por se tratar de uma plataforma aberta e já estudada em matérias durante o curso, o \emph{OpenGL} foi escolhido, juntamente com a linguagem C++. Além disso, essa \emph{API} oferece algumas extensões que permitem maximizar a performance do sistema, como o a estrutura \emph{Vertex Buffer Object} (\sigla{VBO}{Vertex Buffer Object}), que armazena os vértices do modelo 3D diretamente na memória da placa de vídeo, diminuindo o número de chamadas para a renderização. O \emph{OpenGL} também possui algumas bibliotecas, como o \emph{GLFW} \cite{glfw}, para tratamento de eventos do mouse e teclado, o \emph{AntTweakBar} \cite{anttweakbar}, para a construção de interfaces gráficas e o \emph{DevIL} \cite{devil} para a leitura de imagens.
+
+O desenvolvimento do arcabouço seguiu técnicas de \emph{Programação Orientada a Objetos} (\sigla{POO}{Programação Orientada a Objetos}), sempre com a intenção de deixar o sistema o mais flexível possível. Um estudo do funcionamento de \emph{frameworks} também foi necessário, envolvendo questões como \emph{hot spots}, \emph{frozen spots}, caixa-preta, caixa-branca \cite{framework}.
+
+Foi pesquisado também diversas técnicas procedurais envolvidas na geração de terrenos, como, por exemplo, ruído de Perlin, algoritmo fractal plasma, bem como algumas sistemas que oferecem soluções ligadas à geração procedural, como o \emph{CityEngine} \cite{citygen} e o \emph{MojoWorld} \cite{mojoworld}.
+
+Para a visualização dos terrenos, foi considerado a criação de uma estrutura de grafo de cena. Na estrutura, cada nodo representa um terreno gerado. A Figura \ref{fig:grafo2} considera que a câmera está situado acima do \emph{Terreno 0}, e assim ele possui oito nodos filhos ao seu redor.
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.3\linewidth]{img/grafo_cena2.png}}
+	\caption{\label{fig:grafo2} Grafo de cena e terrenos, com a câmera no Terreno 0.}
+\end{figure}
+
+Na Figura \ref{fig:grafo3}, a câmera passa a estar em cima do Terreno 5. Logo, serão gerados os terrenos 8, 9 e 10. Os terrenos 1, 4 e 6 (em branco) poderão ser excluídos, enquanto que os terrenos 0, 2, 3, 7 e 8 passarão a apontar para um novo nodo pai: o nodo que representa o terreno 5.
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.4\linewidth]{img/grafo_cena3.png}}
+	\caption{\label{fig:grafo3} Grafo de cena e terrenos, com a câmera no Terreno 5.}
+\end{figure}
+
+Outro aspecto levado em consideração, foi o número de terrenos gerados e o número de terrenos que estão sendo visualizados. Na Figura \ref{fig:grafo1}, os terrenos em branco foram gerados, mas não serão renderizados na tela, para economizar recursos da placa de vídeo. O número e as distâncias entre os terrenos gerados e visualizados são parâmetros do arcabouço.
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.5\linewidth]{img/grafo_cena1.png}}
+	\caption{\label{fig:grafo1} Visualização e geração dos terrenos.}
+\end{figure}
