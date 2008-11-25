@@ -42,7 +42,10 @@ As Figuras \ref{fig:tela4} e \ref{fig:tela5} mostram um terreno gerado procedura
 \end{figure}
 
 
-Alguns testes foram feitos, para avaliar a variação de frames por segundo (\sigla{FPS}{Frames por segundo}) com a alteração de alguns parâmetros. O primeiro teste (Figura \ref{fig:teste1}) mostra o impacto na mudança do número de \emph{octaves}, considerando o número de terrenos vizinhos fixo em 2. As quedas abruptas de rendimento significam momentos em que a geração dos novos terrenos está acontecendo. Quanto maior o número de \emph{octaves}, maior o número de vértices da malha do terreno; explicando assim o FPS menor.
+Alguns testes foram feitos, para avaliar a variação de frames por segundo (\sigla{FPS}{Frames por segundo}) com a alteração de alguns parâmetros. Eles foram executados em um \emph{Athlon64 3500}, com 2GB de memória \emph{RAM} e placa de vídeo GeForce6600 com 64MB de memória, e consistiam em um vôo da câmera pelo terreno durante 60 segundos, em um trajeto constante para todos os testes.
+
+
+O primeiro teste (Figura \ref{fig:teste1}) mostra o impacto na mudança do número de \emph{octaves}, considerando o número de terrenos vizinhos fixo em 2. As quedas abruptas de rendimento significam momentos em que a geração dos novos terrenos está acontecendo. Quanto maior o número de \emph{octaves}, maior o número de vértices da malha do terreno; explicando assim o FPS menor.
 
 \begin{figure}[H]
 	\center{\includegraphics[width=0.5\linewidth]{img/graficos/teste1/teste1.png}}
