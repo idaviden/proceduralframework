@@ -11,7 +11,25 @@
 \documentclass{beamer}
 \usepackage[latin1]{inputenc}
 \usepackage[brazil]{babel}
-\usetheme{Darmstadt}
+
+
+
+%Temas
+\usetheme[compress]{Dresden}
+%\useoutertheme[subsection=false]{smoothbars}
+%\useinnertheme[shadow]{rounded}
+\useinnertheme{rectangles}
+
+
+\makeatletter
+\beamer@theme@subsectionfalse
+\makeatother
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{img/fundo}}
+
+
+
+
 
 \begin{document}
 \title[Geração Procedural de Terrenos em Tempo-Real]{Desenvolvimento de um Arcabouço para a Geração Procedural e Visualização de Terrenos em Tempo-Real}
@@ -28,7 +46,9 @@
 {
 \begin{frame}
 \frametitle{Sumário}
+\setcounter{tocdepth}{1}
 \tableofcontents[currentsection]
+\setcounter{tocdepth}{2}
 \end{frame}
 }
 
@@ -39,7 +59,7 @@
 
 \include{motivacao}
 \include{proposta}
-\include{metodologia}
+%\include{metodologia}
 \include{resultados}
 \include{conclusao}
 

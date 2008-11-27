@@ -8,7 +8,7 @@
 
 class DynamicTerrain : public Terrain{
 protected:
-	virtual void Render(bool);
+	virtual void Render(bool,int);
 
 public:
 	DynamicTerrain(int, Vector3<float>, Vector3<float>, int, int);

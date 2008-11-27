@@ -4,6 +4,10 @@
 #include "Vector3.h"
 #include "GL/glew.h"
 #include "GL/glfw.h"
+#include "AntTweakBar.h"
+#include <IL/il.h>
+#include "Constants.h"
+
 
 
 
@@ -12,8 +16,12 @@ Framework::Framework(int p_width, int p_height)
 	m_width = p_width;
 	m_height = p_height;
 
-	camera = new Camera(Vector3<float>(10, 250, 10), Vector3<float>(0,0,0));
+	
+	//Camera
+	m_camera = new Camera(Vector3<float>(10, 250, 10), Vector3<float>(0,0,0));
 
+	
+	
 
 	
 
@@ -47,6 +55,20 @@ void Framework::Init(){
 		glfwTerminate();
 	}
 
+	// Initialize AntTweakBar
+    if( !TwInit(TW_OPENGL, NULL) )
+    {
+        // A fatal error occured 
+        glfwTerminate();
+    }
+	TwWindowSize(m_width, m_height);
+
+
+	//Initialize DevIL
+	ilInit();
+
+
+
     // Set window title
     glfwSetWindowTitle( "POC I - Fabio Miranda" );
 
@@ -61,17 +83,17 @@ void Framework::Init(){
 	glEnable(GL_TEXTURE_2D);
 
 	m_isRunning = true;
-
-
-	
-
-
+	m_colorToRender = 0;
 
 
 
 
 	
-	
+	//Menu
+	m_menu = new Menu();
+
+	//Skybox
+	m_skybox = new Skybox();
 
 	
 
@@ -94,6 +116,7 @@ int Framework::Start(){
 	}
 
 	glfwTerminate();
+	TwTerminate();
 	return 0;
 
 }
@@ -136,9 +159,9 @@ void Framework::GLConfig(){
 
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
-	glRotatef(camera->m_rotation.GetX(),1.0,0.0,0.0); //rotate our camera on teh x-axis (left and right)
-	glRotatef(camera->m_rotation.GetY(),0.0,1.0,0.0); //rotate our camera on the y-axis (up and down)
-	glTranslated(-camera->m_pos.GetX(),-camera->m_pos.GetY(),-camera->m_pos.GetZ()); //translate the screen to the position of our camera
+	glRotatef(m_camera->m_rotation.GetX(),1.0,0.0,0.0); //rotate our camera on teh x-axis (left and right)
+	glRotatef(m_camera->m_rotation.GetY(),0.0,1.0,0.0); //rotate our camera on the y-axis (up and down)
+	glTranslated(-m_camera->m_pos.GetX(),-m_camera->m_pos.GetY(),-m_camera->m_pos.GetZ()); //translate the screen to the position of our camera
 
 
 
@@ -148,7 +171,7 @@ void Framework::GLConfig(){
 
 
 void Framework::DoUpdate(){
-	camera->Update();
+	m_camera->Update();
 
 
 	//Keyboard
@@ -160,24 +183,40 @@ void Framework::DoUpdate(){
 		m_wireFrame = false;
 	}
 
+	if(glfwGetKey( 'Z' ))
+		m_colorToRender = COLOR_GRAYSCALE;
+	else if(glfwGetKey( 'X' ))
+		m_colorToRender = COLOR_MIX;
+	else if(glfwGetKey( 'C' ))
+		m_colorToRender = COLOR_GREEN;
+
 }
 
 void Framework::DoRender(){
 
 	GLConfig();
 	
+	
 	//Light
 	//Framework::InitLight();
 
+	//Skybox
+	m_skybox->RenderSkybox(m_camera->m_pos);
+
 	
-	m_currentNode->Render(m_wireFrame);
+	m_currentNode->Render(m_wireFrame, m_colorToRender);
 
 
 	//See if the camera is on another node. If so, we have to generate its neighbours
-	if(m_currentNode->IsWithin(camera->m_pos) == false){
+	if(m_currentNode->IsWithin(m_camera->m_pos) == false){
 
-		m_currentNode = m_currentNode->FindCurrentStandingNode(camera->m_pos);
+		m_currentNode = m_currentNode->FindCurrentStandingNode(m_camera->m_pos);
 	}
+
+	
+
+	// Draw tweak bars
+    TwDraw();
 
 	/*
 	for (m_iterator = m_sceneGraph.begin(); m_iterator != m_sceneGraph.end(); m_iterator++ )
@@ -216,8 +255,8 @@ void Framework::InitLight(){
 	//Light
 	
 	glEnable(GL_LIGHT0);
-	//glDepthFunc(GL_LESS);
-	//glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);
+	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_COLOR_MATERIAL);
 
@@ -229,7 +268,7 @@ void Framework::InitLight(){
 	GLfloat light_specular[] =
 	{1.0, 1.0, 1.0, 1.0};
 	GLfloat light_position[] =
-	{0.0, 10.0, -25.0, 0.0};
+	{0.0, -1.0, 25.0, 0.0};
 
 	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
