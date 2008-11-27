@@ -7,7 +7,7 @@
 \beamer@subsectionintoc {2}{1}{Proposta}{10}{0}{2}
 \beamer@subsectionintoc {2}{2}{Gera\c c\~ao procedural dos terrenos}{12}{0}{2}
 \beamer@subsectionintoc {2}{3}{Grafo de cena}{13}{0}{2}
-\beamer@sectionintoc {3}{Resultados}{15}{0}{3}
-\beamer@subsectionintoc {3}{1}{Resultados}{16}{0}{3}
-\beamer@sectionintoc {4}{Conclus\~ao e trabalhos futuros}{23}{0}{4}
-\beamer@sectionintoc {5}{Bibliografia}{25}{0}{5}
+\beamer@sectionintoc {3}{Resultados}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Resultados}{17}{0}{3}
+\beamer@sectionintoc {4}{Conclus\~ao e trabalhos futuros}{24}{0}{4}
+\beamer@sectionintoc {5}{Bibliografia}{26}{0}{5}
