@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.6) (preloaded format=pdflatex 2008.11.24)  26 NOV 2008 23:49
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.6) (preloaded format=pdflatex 2008.11.24)  27 NOV 2008 01:20
 entering extended mode
 **apresentacao_monografia.tex
 (apresentacao_monografia.tex
@@ -749,7 +749,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 36.
 
-<img/fundo.png, id=49, 798.985pt x 600.2425pt>
+<img/fundo.png, id=50, 798.985pt x 600.2425pt>
 File: img/fundo.png Graphic file (type png)
  <use img/fundo.png>
 
@@ -788,7 +788,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 ("C:\Program Files\MiKTeX 2.6\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
-<img/kkrieger.png, id=273, 803.0pt x 600.2425pt>
+<img/kkrieger.png, id=280, 803.0pt x 600.2425pt>
 File: img/kkrieger.png Graphic file (type png)
  <use img/kkrieger.png>
 Overfull \hbox (142.26378pt too wide) in paragraph at lines 63--63
@@ -799,7 +799,7 @@ File: img/fundo.png Graphic file (type png)
 <use img/fundo.png> [6
 
  <img/kkrieger.png (PNG copy)>]
-<img/elite.png, id=314, 481.8pt x 600.2425pt>
+<img/elite.png, id=322, 481.8pt x 600.2425pt>
 File: img/elite.png Graphic file (type png)
  <use img/elite.png>
 Overfull \hbox (142.26378pt too wide) in paragraph at lines 63--63
@@ -810,7 +810,7 @@ File: img/fundo.png Graphic file (type png)
 <use img/fundo.png> [7
 
  <img/elite.png (PNG copy)>]
-<img/speedtree.png, id=355, 441.65pt x 468.75125pt>
+<img/speedtree.png, id=364, 441.65pt x 468.75125pt>
 File: img/speedtree.png Graphic file (type png)
  <use img/speedtree.png>
 Overfull \hbox (142.26378pt too wide) in paragraph at lines 63--63
@@ -832,7 +832,7 @@ File: img/fundo.png Graphic file (type png)
  <use img/fundo.png>
 [10
 
-] <img/node.png, id=480, 526.96875pt x 234.8775pt>
+] <img/node.png, id=492, 526.96875pt x 234.8775pt>
 File: img/node.png Graphic file (type png)
  <use img/node.png>
 File: img/fundo.png Graphic file (type png)
@@ -840,7 +840,7 @@ File: img/fundo.png Graphic file (type png)
 <use img/fundo.png> [11
 
  <img/node.png (PNG copy)>]
-<img/perlin.png, id=520, 703.62875pt x 497.86pt>
+<img/perlin.png, id=533, 703.62875pt x 497.86pt>
 File: img/perlin.png Graphic file (type png)
  <use img/perlin.png>
 Overfull \hbox (142.26378pt too wide) in paragraph at lines 43--43
@@ -851,115 +851,123 @@ File: img/fundo.png Graphic file (type png)
 <use img/fundo.png> [12
 
  <img/perlin.png (PNG copy)>]
-<img/grafo_cena2.png, id=561, 571.13374pt x 362.35374pt>
+<img/grafo_cena1.png, id=575, 1000.73875pt x 666.49pt>
+File: img/grafo_cena1.png Graphic file (type png)
+
+<use img/grafo_cena1.png>
+File: img/fundo.png Graphic file (type png)
+ <use img/fundo.png> [13
+
+ <img/grafo_cena1.png (PNG copy)>] <img/grafo_cena2.png, id=618, 571.13374pt x 
+362.35374pt>
 File: img/grafo_cena2.png Graphic file (type png)
 
 <use img/grafo_cena2.png>
-Overfull \hbox (142.26378pt too wide) in paragraph at lines 66--66
+Overfull \hbox (142.26378pt too wide) in paragraph at lines 76--76
 [][][]  
  []
 
 
-Overfull \vbox (52.87807pt too high) detected at line 66
- []
-
-File: img/fundo.png Graphic file (type png)
-<use img/fundo.png> [13
-
- <img/grafo_cena2.png (PNG copy)>]
-<img/grafo_cena3.png, id=603, 571.13374pt x 362.35374pt>
-File: img/grafo_cena3.png Graphic file (type png)
-
-<use img/grafo_cena3.png>
-Overfull \hbox (142.26378pt too wide) in paragraph at lines 66--66
-[][][]  
- []
-
-
-Overfull \vbox (52.87807pt too high) detected at line 66
+Overfull \vbox (52.87807pt too high) detected at line 76
  []
 
 File: img/fundo.png Graphic file (type png)
 <use img/fundo.png> [14
 
+ <img/grafo_cena2.png (PNG copy)>]
+<img/grafo_cena3.png, id=659, 571.13374pt x 362.35374pt>
+File: img/grafo_cena3.png Graphic file (type png)
+
+<use img/grafo_cena3.png>
+Overfull \hbox (142.26378pt too wide) in paragraph at lines 76--76
+[][][]  
+ []
+
+
+Overfull \vbox (52.87807pt too high) detected at line 76
+ []
+
+File: img/fundo.png Graphic file (type png)
+<use img/fundo.png> [15
+
  <img/grafo_cena3.png (PNG copy)>]) (resultados.tex
 (apresentacao_monografia.toc)
 File: img/fundo.png Graphic file (type png)
- <use img/fundo.png> [15
+ <use img/fundo.png> [16
 
 
 
 ]
-<img/caps/3.png, id=688, 602.25pt x 451.6875pt>
+<img/caps/3.png, id=746, 602.25pt x 451.6875pt>
 File: img/caps/3.png Graphic file (type png)
  <use img/caps/3.png>
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [16
+<use img/fundo.png> [17
 
  <img/caps/3.png (PNG copy)>]
-<img/caps/4.png, id=714, 602.25pt x 451.6875pt>
+<img/caps/4.png, id=772, 602.25pt x 451.6875pt>
 File: img/caps/4.png Graphic file (type png)
  <use img/caps/4.png>
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [17
+<use img/fundo.png> [18
 
  <img/caps/4.png (PNG copy)>]
-<img/caps/5.png, id=739, 602.25pt x 451.6875pt>
+<img/caps/5.png, id=797, 602.25pt x 451.6875pt>
 File: img/caps/5.png Graphic file (type png)
  <use img/caps/5.png>
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [18
+<use img/fundo.png> [19
 
  <img/caps/5.png (PNG copy)>]
-<img/caps/6.png, id=764, 602.25pt x 451.6875pt>
+<img/caps/6.png, id=823, 602.25pt x 451.6875pt>
 File: img/caps/6.png Graphic file (type png)
  <use img/caps/6.png>
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [19
+<use img/fundo.png> [20
 
  <img/caps/6.png (PNG copy)>]
-<img/caps/7.png, id=790, 602.25pt x 451.6875pt>
+<img/caps/7.png, id=848, 602.25pt x 451.6875pt>
 File: img/caps/7.png Graphic file (type png)
  <use img/caps/7.png>
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [20
+<use img/fundo.png> [21
 
  <img/caps/7.png (PNG copy)>]
-<img/caps/8.png, id=815, 602.25pt x 451.6875pt>
+<img/caps/8.png, id=873, 602.25pt x 451.6875pt>
 File: img/caps/8.png Graphic file (type png)
  <use img/caps/8.png>
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [21
+<use img/fundo.png> [22
 
  <img/caps/8.png (PNG copy)>]
-<img/caps/9.png, id=839, 602.25pt x 451.6875pt>
+<img/caps/9.png, id=897, 602.25pt x 451.6875pt>
 File: img/caps/9.png Graphic file (type png)
  <use img/caps/9.png>
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [22
+<use img/fundo.png> [23
 
  <img/caps/9.png (PNG copy)>]) (conclusao.tex
 (apresentacao_monografia.toc)
 File: img/fundo.png Graphic file (type png)
- <use img/fundo.png> [23
+ <use img/fundo.png> [24
 
 
 
 ]
 File: img/fundo.png Graphic file (type png)
  <use img/fundo.png>
-[24
+[25
 
 ]) (apresentacao_monografia.toc)
 File: img/fundo.png Graphic file (type png)
- <use img/fundo.png> [25
+ <use img/fundo.png> [26
 
 
 ]
@@ -968,7 +976,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [26
+<use img/fundo.png> [27
 
  <C:/Program Files/MiKTeX 2.6/tex/latex/beamer/base/art/beamericonarticle.pdf>]
 
@@ -976,14 +984,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [27])
+<use img/fundo.png> [28])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: img/fundo.png Graphic file (type png)
 
-<use img/fundo.png> [28]
+<use img/fundo.png> [29]
 File: img/fundo.png Graphic file (type png)
- <use img/fundo.png> [29]
+ <use img/fundo.png> [30]
 \tf@nav=\write5
 \tf@toc=\write6
 \tf@snm=\write7
@@ -995,10 +1003,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 12588 strings out of 95274
- 214488 string characters out of 1184550
- 287789 words of memory out of 1281223
- 14855 multiletter control sequences out of 60000
+ 12603 strings out of 95274
+ 214662 string characters out of 1184550
+ 288300 words of memory out of 1281222
+ 14862 multiletter control sequences out of 60000
  11736 words of font info for 44 fonts, out of 1000000 for 2000
  16 hyphenation exceptions out of 8191
  47i,19n,60p,360b,1000s stack positions out of 5000i,500n,10000p,200000b,32768s
@@ -1006,9 +1014,9 @@ Here is how much of TeX's memory you used:
 les/MiKTeX 2.6/fonts/type1/bluesky/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.6/f
 onts/type1/bluesky/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.6/fonts/type1/bluesk
 y/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.6/fonts/type1/bluesky/cm/cmtt8.pfb>
-Output written on apresentacao_monografia.pdf (29 pages, 2763639 bytes).
+Output written on apresentacao_monografia.pdf (30 pages, 2812122 bytes).
 PDF statistics:
- 1238 PDF objects out of 300000 (max. 8388607)
- 88 named destinations out of 300000 (max. 131072)
- 164 words of extra memory for PDF output out of 65536 (max. 10000000)
+ 1303 PDF objects out of 300000 (max. 8388607)
+ 90 named destinations out of 300000 (max. 131072)
+ 169 words of extra memory for PDF output out of 65536 (max. 10000000)
 
