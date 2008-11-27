@@ -14,9 +14,9 @@ DynamicTerrain::DynamicTerrain(int renderStepSize, Vector3<float> color, Vector3
 
 }
 
-void DynamicTerrain::Render(bool wireFrame){
+void DynamicTerrain::Render(bool wireFrame, int colorToRender){
 
-	Terrain::Render(wireFrame);
+	Terrain::Render(wireFrame,colorToRender);
 }
 
 

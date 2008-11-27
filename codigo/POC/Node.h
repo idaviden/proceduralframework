@@ -20,7 +20,7 @@ public:
 	
 public:
 	Node();
-	virtual void Render(bool);
+	virtual void Render(bool,int);
 	virtual bool IsWithin(Vector3<float>);
 	virtual void GenerateNeighbours(Node*);
 	virtual Node* FindCurrentStandingNode(Vector3<float>);

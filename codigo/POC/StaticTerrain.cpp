@@ -16,8 +16,8 @@ StaticTerrain::StaticTerrain(int renderStepSize, Vector3<float> color, Vector3<f
 
 }
 
-void StaticTerrain::Render(bool wireFrame){
+void StaticTerrain::Render(bool wireFrame, int colorToRender){
 
-	Terrain::Render(wireFrame);
+	Terrain::Render(wireFrame,colorToRender);
 }
 

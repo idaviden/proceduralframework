@@ -3,7 +3,9 @@
 
 #include "vector"
 #include "Camera.h"
+#include "Menu.h"
 #include "Node.h"
+#include "Skybox.h"
 using namespace::std;
 
 class Framework{
@@ -15,11 +17,15 @@ protected:
 	//vector<Node*> m_sceneGraph;
 	//vector<Node*>::iterator m_iterator;
 
-	Camera* camera;
+	Camera* m_camera;
+	Menu* m_menu;
+	Skybox* m_skybox;
 	Node* m_currentNode;
+	
 
 	bool m_isRunning;
 	bool m_wireFrame;
+	int m_colorToRender;
 
 
 	Framework(int, int);

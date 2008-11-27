@@ -56,6 +56,7 @@ void Camera::UpdateKeyboard(){
 
 void Camera::UpdateMouse(){
 	int x, y;
+	
 	glfwGetMousePos(&x,&y);
 	
 	if(glfwGetMouseButton(GLFW_MOUSE_BUTTON_LEFT)){

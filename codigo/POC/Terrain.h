@@ -12,7 +12,7 @@ class Terrain : public Node{
 protected:
 	//void RenderQuad(int, int);
 	//int GetArrayPosition(int, int);
-	virtual void Render(bool);
+	virtual void Render(bool,int);
 
 
 

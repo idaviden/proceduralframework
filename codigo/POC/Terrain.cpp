@@ -7,6 +7,7 @@
 #include <string>
 #include <iostream>
 #include "GL/glfw.h"
+#include "Constants.h"
 using namespace std;
 
 
@@ -58,7 +59,7 @@ Node* Terrain::FindCurrentStandingNode(Vector3<float> cam_position){
 		Node& node = **m_iterator;
 		
 		if(node.IsWithin(cam_position)){
-			cout << "caiu!!";
+			//cout << "caiu!!";
 
 			node.GenerateNeighbours(this);
 
@@ -73,9 +74,9 @@ Node* Terrain::FindCurrentStandingNode(Vector3<float> cam_position){
 
 }
 
-void Terrain::Render(bool wireFrame){
+void Terrain::Render(bool wireFrame, int colorToRender){
 
-	Node::Render(wireFrame);
+	Node::Render(wireFrame, colorToRender);
 	
 	
 	
@@ -143,17 +144,23 @@ void Terrain::Render(bool wireFrame){
 
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_COLOR_ARRAY);
-	glEnableClientState( GL_TEXTURE_COORD_ARRAY );
+	//glEnableClientState( GL_TEXTURE_COORD_ARRAY );
 
 
 	glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_mesh->m_vboVertices); //vertices
 	glVertexPointer( 3, GL_FLOAT, 0, (char *) NULL);
 
-	glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_mesh->m_vboColors); //colors
+	if(colorToRender == COLOR_GRAYSCALE)
+		glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_mesh->m_vboColorGrayScale); //colors
+	else if(colorToRender == COLOR_GREEN)
+		glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_mesh->m_vboColorGreen); //colors
+	else if(colorToRender == COLOR_MIX)
+		glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_mesh->m_vboColorMix); //colors
+
 	glColorPointer(3, GL_FLOAT, 0, (char *) NULL);
 
-	glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_mesh->m_vboTexCoord); //texCoords
-	glTexCoordPointer(3, GL_FLOAT, 0, (char *) NULL);
+	//glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_mesh->m_vboTexCoord); //texCoords
+	//glTexCoordPointer(3, GL_FLOAT, 0, (char *) NULL);
 	
 	
 
@@ -168,7 +175,7 @@ void Terrain::Render(bool wireFrame){
 
 	glDisableClientState(GL_VERTEX_ARRAY);
 	glDisableClientState(GL_COLOR_ARRAY);
-	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
+	//glDisableClientState( GL_TEXTURE_COORD_ARRAY );
 
 
 	//if (m_shader) m_shader->end();
@@ -313,7 +320,7 @@ void Terrain::LoadTexture(char* end, GLuint& texture, GLuint textureIndex){
 	//Load textures
 	ILuint image_name;
 
-	ilInit(); /* Initialization of DevIL */
+	//ilInit(); /* Initialization of DevIL */
 	ilGenImages(1, &image_name); /* Generation of one image name */
 	ilBindImage(image_name); /* Binding of image name */
 	if(!ilLoadImage(end)){ /* Loading of image "image.jpg" */

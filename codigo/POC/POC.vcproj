@@ -193,6 +193,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Skybox.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.cpp"
 				>
 				<FileConfiguration
@@ -255,6 +259,10 @@
 					RelativePath=".\glsl.cpp"
 					>
 				</File>
+				<File
+					RelativePath=".\Menu.cpp"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -262,6 +270,10 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\Constants.h"
+				>
+			</File>
 			<File
 				RelativePath=".\Framework.h"
 				>
@@ -276,6 +288,10 @@
 			</File>
 			<File
 				RelativePath=".\POC.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Skybox.h"
 				>
 			</File>
 			<File
@@ -327,6 +343,10 @@
 				</File>
 				<File
 					RelativePath=".\glsl.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Menu.h"
 					>
 				</File>
 				<File

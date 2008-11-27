@@ -8,7 +8,7 @@
 
 class StaticTerrain : public Terrain{
 protected:
-	virtual void Render(bool);
+	virtual void Render(bool,int);
 	
 
 public:

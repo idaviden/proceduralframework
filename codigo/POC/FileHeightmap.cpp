@@ -19,7 +19,7 @@ FileHeightmap::FileHeightmap(int renderStepSize, Vector3<float> color, Vector3<f
 }
 
 void FileHeightmap::FillHeightMap(){
-	ilInit();
+	//ilInit();
 	ilEnable(IL_ORIGIN_SET);
 	// Generate a new image Id and bind it with the
 	// current image.
