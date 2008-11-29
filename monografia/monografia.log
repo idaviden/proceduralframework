@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.6) (preloaded format=pdflatex 2008.11.24)  28 NOV 2008 22:57
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.6) (preloaded format=pdflatex 2008.11.24)  28 NOV 2008 23:10
 entering extended mode
 **monografia.tex
 (monografia.tex
@@ -511,24 +511,24 @@ File: img/caps/4.png Graphic file (type png)
 pt>
 File: img/caps/5.png Graphic file (type png)
  <use img/caps/5.png>
-(teste1.tex [21 <img/caps/4.png (PNG copy)> <img/caps/5.png (PNG copy)>]
+(teste_geracao.tex [21 <img/caps/4.png (PNG copy)> <img/caps/5.png (PNG copy)>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
-
 ("C:\Program Files\MiKTeX 2.6\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
  (tabela_tempos.tex)
-[22] <testes/testes.png, id=336, 965.6075pt x 745.78625pt>
+[22] <testes/testes.png, id=339, 965.6075pt x 745.78625pt>
 File: testes/testes.png Graphic file (type png)
 
-<use testes/testes.png>) (teste2.tex
-<img/graficos/teste1/teste1.png, id=338, 642.4pt x 481.8pt>
+<use testes/testes.png>) (teste_variando_octaves.tex
+<img/graficos/teste1/teste1.png, id=341, 642.4pt x 481.8pt>
 File: img/graficos/teste1/teste1.png Graphic file (type png)
 
 <use img/graficos/teste1/teste1.png>) [23 <testes/testes.png (PNG copy)>]
-(teste3.tex <img/graficos/teste2/teste2.png, id=345, 642.4pt x 481.8pt>
+(teste_variando_vizinhos.tex
+<img/graficos/teste2/teste2.png, id=348, 642.4pt x 481.8pt>
 File: img/graficos/teste2/teste2.png Graphic file (type png)
 
 <use img/graficos/teste2/teste2.png>)) [24 <img/graficos/teste1/teste1.png (PNG
@@ -558,10 +558,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5828 strings out of 95274
- 75266 string characters out of 1184550
- 146642 words of memory out of 1144684
- 8331 multiletter control sequences out of 60000
+ 5831 strings out of 95274
+ 75490 string characters out of 1184550
+ 146795 words of memory out of 1144837
+ 8334 multiletter control sequences out of 60000
  13529 words of font info for 33 fonts, out of 1000000 for 2000
  16 hyphenation exceptions out of 8191
  32i,9n,30p,987b,492s stack positions out of 5000i,500n,10000p,200000b,32768s
@@ -579,9 +579,9 @@ pk> <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.6\fonts\pk\l
 jfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Documents and Settings\All Users\Appl
 ication Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk><C:/Prog
 ram Files/MiKTeX 2.6/fonts/type1/bluesky/cm/cmsy10.pfb>
-Output written on monografia.pdf (29 pages, 997675 bytes).
+Output written on monografia.pdf (29 pages, 998281 bytes).
 PDF statistics:
- 845 PDF objects out of 300000 (max. 8388607)
+ 848 PDF objects out of 300000 (max. 8388607)
  89 named destinations out of 300000 (max. 131072)
  260 words of extra memory for PDF output out of 65536 (max. 10000000)
 
