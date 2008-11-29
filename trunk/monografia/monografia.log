@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.6) (preloaded format=pdflatex 2008.10.3)  24 NOV 2008 11:09
+This is pdfTeX, Version 3.141592-1.40.4 (MiKTeX 2.6) (preloaded format=pdflatex 2008.11.24)  28 NOV 2008 22:57
 entering extended mode
 **monografia.tex
 (monografia.tex
@@ -291,6 +291,9 @@ Package: html 1999/07/19 v1.38 hypertext commands for latex2html (nd, hws, rrm)
 \c@lsubsubparagraph=\count121
 \ptrfile=\write3
 )
+("C:\Program Files\MiKTeX 2.6\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen123
+)
 
 LaTeX Warning: Unused global option(s):
     [pagestart=fistchapter,tocpage=plain].
@@ -298,30 +301,30 @@ LaTeX Warning: Unused global option(s):
 (monografia.aux (capa.aux) (folharosto.aux) (dedicatoria.aux)
 (agradecimentos.aux) (epigrafe.aux) (resumo.aux) (abstract.aux) (introducao.aux
 ) (referecialTeorico.aux) (metodologia.aux) (resultados.aux) (conclusao.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
 
 ("C:\Program Files\MiKTeX 2.6\tex\context\base\supp-pdf.tex"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
-\scratchdimen=\dimen123
+\scratchdimen=\dimen124
 \scratchbox=\box54
 \nofMPsegments=\count123
 \nofMParguments=\count124
 \MPscratchCnt=\count125
-\MPscratchDim=\dimen124
+\MPscratchDim=\dimen125
 \MPnumerator=\count126
 \everyMPtoPDFconversion=\toks23
 )
@@ -364,7 +367,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 175.
+Package hyperref Info: Link coloring OFF on input line 176.
  ("C:\Program Files\MiKTeX 2.6\tex\latex\hyperref\nameref.sty"
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -373,8 +376,8 @@ Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 175.
-LaTeX Info: Redefining \pageref on input line 175.
+LaTeX Info: Redefining \ref on input line 176.
+LaTeX Info: Redefining \pageref on input line 176.
 
 (monografia.out) (monografia.out)
 \@outlinefile=\write4
@@ -400,7 +403,7 @@ l.50 \end{titlepage}
  (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.183 \include{dedicatoria}
+l.184 \include{dedicatoria}
                             [1
 
 
@@ -414,107 +417,124 @@ l.183 \include{dedicatoria}
 
 
 
-] (monografia.toc)
+] (monografia.toc [4
+
+
+])
 \tf@toc=\write5
- [4
-
-
-] (monografia.lof [5
+ [5] (monografia.lof [6
 
 
 ])
 \tf@lof=\write6
- [6] (monografia.lsg)
-\tf@lsg=\write7
- [7
+ [7] (monografia.lot)
+\tf@lot=\write7
+ [8
 
 ]
-(resumo.tex [8
+(monografia.lsg)
+\tf@lsg=\write8
+ [9
+
+] (resumo.tex [10
 
 
 
-]) (abstract.tex [9
+]) (abstract.tex [11
 
 
 
 
 ]) (introducao.tex
 Cap\'{\i }tulo 1.
-[10
-
-
-
-]) [11] (referecialTeorico.tex
-Cap\'{\i }tulo 2.
 [12
 
 
 
-] <img/perlin.png, id=224, 703.62875pt x 497.86pt>
-File: img/perlin.png Graphic file (type png)
- <use img/perlin.png>
-<img/plasma.png, id=226, 301.125pt x 301.125pt>
-File: img/plasma.png Graphic file (type png)
- <use img/plasma.png>) [13 <img/perlin.png (PNG copy)> <img/plasma.png (PNG cop
-y)>] (metodologia.tex
-Cap\'{\i }tulo 3.
-Package hyperref Info: bookmark level for unknown sigla defaults to 0 on input 
-line 9.
+]) [13] (referecialTeorico.tex
+Cap\'{\i }tulo 2.
 [14
 
 
 
-] <img/grafo_cena2.png, id=248, 419.5675pt x 362.35374pt>
+] <img/perlin.png, id=263, 703.62875pt x 497.86pt>
+File: img/perlin.png Graphic file (type png)
+ <use img/perlin.png>
+<img/plasma.png, id=265, 301.125pt x 301.125pt>
+File: img/plasma.png Graphic file (type png)
+ <use img/plasma.png>) [15 <img/perlin.png (PNG copy)> <img/plasma.png (PNG cop
+y)>] (metodologia.tex
+Cap\'{\i }tulo 3.
+Package hyperref Info: bookmark level for unknown sigla defaults to 0 on input 
+line 9.
+[16
+
+
+
+] <img/grafo_cena2.png, id=287, 571.13374pt x 362.35374pt>
 File: img/grafo_cena2.png Graphic file (type png)
 
 <use img/grafo_cena2.png>
-<img/grafo_cena3.png, id=250, 571.13374pt x 362.35374pt>
+<img/grafo_cena3.png, id=289, 571.13374pt x 362.35374pt>
 File: img/grafo_cena3.png Graphic file (type png)
 
 <use img/grafo_cena3.png>
-<img/grafo_cena1.png, id=252, 1000.73875pt x 666.49pt>
+<img/grafo_cena1.png, id=291, 1000.73875pt x 666.49pt>
 File: img/grafo_cena1.png Graphic file (type png)
 
-<use img/grafo_cena1.png> [15 <img/grafo_cena2.png (PNG copy)> <img/grafo_cena3
-.png (PNG copy)>]) [16 <img/grafo_cena1.png (PNG copy)>] (resultados.tex
+<use img/grafo_cena1.png> [17 <img/grafo_cena2.png (PNG copy)> <img/grafo_cena3
+.png (PNG copy)>]) [18 <img/grafo_cena1.png (PNG copy)>] (resultados.tex
 Cap\'{\i }tulo 4.
-<img/caps/2.png, id=265, 602.25pt x 451.6875pt>
+<img/caps/2.png, id=305, 602.25pt x 451.6875pt>
 File: img/caps/2.png Graphic file (type png)
  <use img/caps/2.png>
-<img/caps/3.png, id=266, 602.25pt x 451.6875pt>
+<img/caps/3.png, id=306, 602.25pt x 451.6875pt>
 File: img/caps/3.png Graphic file (type png)
  <use img/caps/3.png>
-<img/caps/6.png, id=267, 602.25pt x 451.6875pt>
+<img/caps/6.png, id=307, 602.25pt x 451.6875pt>
 File: img/caps/6.png Graphic file (type png)
- <use img/caps/6.png> [17
+ <use img/caps/6.png> [19
 
 
 
  <img/caps/2.png (PNG copy)> <img/caps/3.png (PNG copy)>]
-<img/caps/7.png, id=273, 602.25pt x 451.6875pt>
+<img/caps/7.png, id=312, 602.25pt x 451.6875pt>
 File: img/caps/7.png Graphic file (type png)
  <use img/caps/7.png>
-<img/heightmap.png, id=277, 100.375pt x 100.375pt>
+<img/heightmap.png, id=316, 100.375pt x 100.375pt>
 File: img/heightmap.png Graphic file (type png)
  <use img/heightmap.png>
-<img/caps/4.png, id=278, 602.25pt x 451.6875pt>
+<img/caps/4.png, id=317, 602.25pt x 451.6875pt>
 File: img/caps/4.png Graphic file (type png)
- <use img/caps/4.png> [18 <img/caps/6.png (PNG copy)> <img/caps/7.png (PNG copy
-)> <img/heightmap.png (PNG copy)>] <img/caps/5.png, id=283, 602.25pt x 451.6875
+ <use img/caps/4.png> [20 <img/caps/6.png (PNG copy)> <img/caps/7.png (PNG copy
+)> <img/heightmap.png (PNG copy)>] <img/caps/5.png, id=322, 602.25pt x 451.6875
 pt>
 File: img/caps/5.png Graphic file (type png)
  <use img/caps/5.png>
-<img/graficos/teste1/teste1.png, id=285, 642.4pt x 481.8pt>
+(teste1.tex [21 <img/caps/4.png (PNG copy)> <img/caps/5.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
+
+("C:\Program Files\MiKTeX 2.6\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+ (tabela_tempos.tex)
+[22] <testes/testes.png, id=336, 965.6075pt x 745.78625pt>
+File: testes/testes.png Graphic file (type png)
+
+<use testes/testes.png>) (teste2.tex
+<img/graficos/teste1/teste1.png, id=338, 642.4pt x 481.8pt>
 File: img/graficos/teste1/teste1.png Graphic file (type png)
 
-<use img/graficos/teste1/teste1.png> [19 <img/caps/4.png (PNG copy)> <img/caps/
-5.png (PNG copy)>] <img/graficos/teste2/teste2.png, id=291, 642.4pt x 481.8pt>
+<use img/graficos/teste1/teste1.png>) [23 <testes/testes.png (PNG copy)>]
+(teste3.tex <img/graficos/teste2/teste2.png, id=345, 642.4pt x 481.8pt>
 File: img/graficos/teste2/teste2.png Graphic file (type png)
 
-<use img/graficos/teste2/teste2.png>) [20 <img/graficos/teste1/teste1.png (PNG 
-copy)> <img/graficos/teste2/teste2.png (PNG copy)>] (conclusao.tex
+<use img/graficos/teste2/teste2.png>)) [24 <img/graficos/teste1/teste1.png (PNG
+ copy)> <img/graficos/teste2/teste2.png (PNG copy)>] (conclusao.tex
 Cap\'{\i }tulo 5.
-) [21
+) [25
 
 
 
@@ -522,7 +542,7 @@ Cap\'{\i }tulo 5.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
  ("C:\Program Files\MiKTeX 2.6\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [22
+) [26
 
 
 ])
@@ -530,34 +550,38 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-[23] (monografia.aux (capa.aux) (folharosto.aux) (dedicatoria.aux)
+[27] (monografia.aux (capa.aux) (folharosto.aux) (dedicatoria.aux)
 (agradecimentos.aux) (epigrafe.aux) (resumo.aux) (abstract.aux) (introducao.aux
-) (referecialTeorico.aux) (metodologia.aux) (resultados.aux) (conclusao.aux)) )
- 
+) (referecialTeorico.aux) (metodologia.aux) (resultados.aux) (conclusao.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5742 strings out of 95274
- 74264 string characters out of 1184551
- 143998 words of memory out of 1144088
- 8296 multiletter control sequences out of 60000
+ 5828 strings out of 95274
+ 75266 string characters out of 1184550
+ 146642 words of memory out of 1144684
+ 8331 multiletter control sequences out of 60000
  13529 words of font info for 33 fonts, out of 1000000 for 2000
  16 hyphenation exceptions out of 8191
- 32i,5n,30p,931b,492s stack positions out of 5000i,500n,10000p,200000b,32768s
- <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.6\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\ectt1200.pk> <C:\Documents and Settings\All Users\Applica
-tion Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Docume
-nts and Settings\All Users\Application Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen
-\ec\dpi600\ecrm1095.pk> <C:\Documents and Settings\All Users\Application Data\M
-iKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Documents and Set
-tings\All Users\Application Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecbx1728.pk> <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.6\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Documents and Settings\All U
-sers\Application Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-> <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.6\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecbx1200.pk> <C:\Documents and Settings\All Users\Applic
-ation Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk>
-Output written on monografia.pdf (25 pages, 940240 bytes).
+ 32i,9n,30p,987b,492s stack positions out of 5000i,500n,10000p,200000b,32768s
+ <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.6\fonts\pk\lj
+four\jknappen\ec\dpi600\ectt1200.pk> <C:\Documents and Settings\All Users\Appli
+cation Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Docu
+ments and Settings\All Users\Application Data\MiKTeX\2.6\fonts\pk\ljfour\jknapp
+en\ec\dpi600\ecrm1095.pk> <C:\Documents and Settings\All Users\Application Data
+\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Documents and S
+ettings\All Users\Application Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecbx1728.pk> <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.6
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Documents and Settings\All
+ Users\Application Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.
+pk> <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.6\fonts\pk\l
+jfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Documents and Settings\All Users\Appl
+ication Data\MiKTeX\2.6\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk><C:/Prog
+ram Files/MiKTeX 2.6/fonts/type1/bluesky/cm/cmsy10.pfb>
+Output written on monografia.pdf (29 pages, 997675 bytes).
 PDF statistics:
- 773 PDF objects out of 300000 (max. 8388607)
- 77 named destinations out of 300000 (max. 131072)
- 223 words of extra memory for PDF output out of 65536 (max. 10000000)
+ 845 PDF objects out of 300000 (max. 8388607)
+ 89 named destinations out of 300000 (max. 131072)
+ 260 words of extra memory for PDF output out of 65536 (max. 10000000)
 
