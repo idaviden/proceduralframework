@@ -117,15 +117,6 @@ void POC::Init(){
 	*/
 
 	
-	PerlinNoise* perlin;
-	perlin = new PerlinNoise(1, Vector3<float>(1.0,1.0,1.0), Vector3<float>(0,0,0), 100, 100, 343, 4, 0.5);
-	perlin->FillHeightMap();
-	perlin->m_mesh->CopyVertexFromHeightMap();
-	perlin->m_mesh->BuildVBOs();
-	//aux->SetShader();
-	perlin->GenerateNeighbours(NULL);
-
-	m_currentNode = perlin;
 	
 	/*
 	FaultFormation* aux;
@@ -142,6 +133,56 @@ void POC::Init(){
 
 	perlin->InsertNode(file);
 	*/
+	//Redirect output
+	freopen( "tests3.csv", "w", stdout );
+
+	double time = 0;
+	double total = 0;
+	PerlinNoise* perlin;
+	cout << "Size=100x100, Seed: 343, Octaves: 32";
+	cout << "\n";
+	cout << "FillHeightMap(); CopyVertexFromHeightMap(); BuildVBOs(); Total;";
+	cout << "\n";
+	for(int i=0; i<100; i++){
+		
+
+		
+		perlin = new PerlinNoise(1, Vector3<float>(1.0,1.0,1.0), Vector3<float>(0,0,0), 100, 100, 343, 32, 0.5);
+
+
+		time = glfwGetTime();
+		total = time;
+		perlin->FillHeightMap();
+		time = glfwGetTime() - time;
+		cout << time;
+		cout << "; ";
+
+		time = glfwGetTime();
+		perlin->m_mesh->CopyVertexFromHeightMap();
+		time = glfwGetTime() - time;
+		cout << time;
+		cout << "; ";
+		
+	
+		time = glfwGetTime();
+		perlin->m_mesh->BuildVBOs();
+		time = glfwGetTime() - time;
+		cout << time;
+		cout << "; ";
+		
+		total = glfwGetTime() - total;
+		cout << total;
+		cout<< "; ";
+
+		cout << "\n";
+
+		//aux->SetShader();
+		//perlin->GenerateNeighbours(NULL);
+
+		m_currentNode = perlin;
+
+
+	}
 	
 	
 	

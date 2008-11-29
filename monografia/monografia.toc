@@ -1,18 +1,22 @@
 \select@language {brazil}
-\contentsline {chapter}{Lista de Figuras}{v}{chapter*.3}
-\contentsline {chapter}{Lista de Siglas}{vii}{chapter*.4}
-\contentsline {chapter}{Resumo}{viii}{chapter*.5}
-\contentsline {chapter}{Abstract}{ix}{chapter*.6}
-\contentsline {chapter}{\numberline {1}INTRODU\c C\~AO}{10}{chapter.1}
-\contentsline {section}{\numberline {1.1}Vis\~ao geral}{10}{section.1.1}
-\contentsline {section}{\numberline {1.2}Objetivo, justificativa e motiva\c c\~ao}{10}{section.1.2}
-\contentsline {chapter}{\numberline {2}REFERENCIAL TE\'ORICO}{12}{chapter.2}
-\contentsline {section}{\numberline {2.1}Terrenos fractais}{12}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Ru\IeC {\'\i }do de Perlin}{12}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Fractal plasma}{13}{subsection.2.1.2}
-\contentsline {chapter}{\numberline {3}METODOLOGIA}{14}{chapter.3}
-\contentsline {section}{\numberline {3.1}Tipo de Pesquisa}{14}{section.3.1}
-\contentsline {section}{\numberline {3.2}Procedimentos metodol\'ogicos}{14}{section.3.2}
-\contentsline {chapter}{\numberline {4}RESULTADOS E DISCUSS\~AO}{17}{chapter.4}
-\contentsline {chapter}{\numberline {5}CONCLUS\~OES E TRABALHOS FUTUROS}{21}{chapter.5}
-\contentsline {chapter}{Refer\^encias}{22}{chapter.5}
+\contentsline {chapter}{Lista de Figuras}{vi}{chapter*.3}
+\contentsline {chapter}{Lista de Tabelas}{viii}{chapter*.4}
+\contentsline {chapter}{Lista de Siglas}{ix}{chapter*.5}
+\contentsline {chapter}{Resumo}{x}{chapter*.6}
+\contentsline {chapter}{Abstract}{xi}{chapter*.7}
+\contentsline {chapter}{\numberline {1}INTRODU\c C\~AO}{12}{chapter.1}
+\contentsline {section}{\numberline {1.1}Vis\~ao geral}{12}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivo, justificativa e motiva\c c\~ao}{12}{section.1.2}
+\contentsline {chapter}{\numberline {2}REFERENCIAL TE\'ORICO}{14}{chapter.2}
+\contentsline {section}{\numberline {2.1}Terrenos fractais}{14}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Ru\IeC {\'\i }do de Perlin}{14}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Fractal plasma}{15}{subsection.2.1.2}
+\contentsline {chapter}{\numberline {3}METODOLOGIA}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}Tipo de Pesquisa}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}Procedimentos metodol\'ogicos}{16}{section.3.2}
+\contentsline {chapter}{\numberline {4}RESULTADOS E DISCUSS\~AO}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Teste 1}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Teste 2}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}Teste 3}{24}{section.4.3}
+\contentsline {chapter}{\numberline {5}CONCLUS\~OES E TRABALHOS FUTUROS}{25}{chapter.5}
+\contentsline {chapter}{Refer\^encias}{26}{chapter.5}
