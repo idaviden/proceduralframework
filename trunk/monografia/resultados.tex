@@ -5,22 +5,22 @@ Os algoritmos de ruído de perlin, e fractal plasma foram implementados, bem como
 As Figuras \ref{fig:tela2} e \ref{fig:tela3}, e \ref{fig:tela6} e \ref{fig:tela7} mostram os terrenos gerados variando o número de iterações do ruído de Perlin e o número de terrenos vizinhos exibidos.
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.5\linewidth]{img/caps/2.png}}
+	\center{\includegraphics[width=0.85\linewidth]{img/caps/2.png}}
 	\caption{\label{fig:tela2} Tela com o terreno gerado.}
 \end{figure}
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.5\linewidth]{img/caps/3.png}}
+	\center{\includegraphics[width=0.85\linewidth]{img/caps/3.png}}
 	\caption{\label{fig:tela3} Tela com o terreno gerado (exibição em \emph{wireframes}).}
 \end{figure}
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.5\linewidth]{img/caps/6.png}}
+	\center{\includegraphics[width=0.85\linewidth]{img/caps/6.png}}
 	\caption{\label{fig:tela6} Tela com o terreno gerado.}
 \end{figure}
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.5\linewidth]{img/caps/7.png}}
+	\center{\includegraphics[width=0.85\linewidth]{img/caps/7.png}}
 	\caption{\label{fig:tela7} Tela com o terreno gerado (exibição em \emph{wireframes}).}
 \end{figure}
 
@@ -32,32 +32,45 @@ As Figuras \ref{fig:tela4} e \ref{fig:tela5} mostram um terreno gerado procedura
 \end{figure}
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.5\linewidth]{img/caps/4.png}}
+	\center{\includegraphics[width=0.85\linewidth]{img/caps/4.png}}
 	\caption{\label{fig:tela4} Tela com o terreno gerado e um mapa de altura inserido.}
 \end{figure}
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.5\linewidth]{img/caps/5.png}}
+	\center{\includegraphics[width=0.85\linewidth]{img/caps/5.png}}
 	\caption{\label{fig:tela5} Tela com o terreno gerado e um mapa de altura inserido (exibição em \emph{wireframes}).}
 \end{figure}
 
+\newpage
+As Figuras \ref{fig:tela8} e \ref{fig:tela9} mostram os terrenos com uma \emph{interface} provisória, onde é possível escolher os parâmetros dos terrenos a serem gerados.
 
+\begin{figure}[H]
+	\center{\includegraphics[width=0.8\linewidth]{img/caps/8.png}}
+	\caption{\label{fig:tela8} Tela com a \emph{interface} do usuário (exibição em \emph{wireframes}).}
+\end{figure}
+
+\begin{figure}[H]
+	\center{\includegraphics[width=0.8\linewidth]{img/caps/9.png}}
+	\caption{\label{fig:tela9} Tela com a \emph{interface} do usuário.}
+\end{figure}
+
+\section{Testes}
 Alguns testes foram feitos, para avaliar a variação de frames por segundo (\sigla{FPS}{Frames por segundo}) com a alteração de alguns parâmetros. Eles foram executados em um \emph{Athlon64 3500}, com 2GB de memória \emph{RAM} e placa de vídeo GeForce6600 com 64MB de memória.
 
 A Seção \ref{teste_geracao} mostra um teste com a geração de 100 terrenos proceduralmente.
 
 As Seções \ref{teste_variando_octaves} e \ref{teste_variando_vizinhos} apresentam testes que consistiam em um vôo da câmera pelo terreno durante 60 segundos, em um trajeto constante para todos os testes.
 
-\section{Teste 1}
+\subsection{Teste 1}
 \label{teste_geracao}
 \input{teste_geracao}
 
-\section{Teste 2}
+\subsection{Teste 2}
 \label{teste_variando_octaves}
 \input{teste_variando_octaves}
 
 
-\section{Teste 3}
+\subsection{Teste 3}
 \label{teste_variando_vizinhos}
 \input{teste_variando_vizinhos}
 

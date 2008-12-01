@@ -15,24 +15,21 @@ Foi pesquisado também diversas técnicas procedurais envolvidas na geração de ter
 Para a visualização dos terrenos, foi considerado a criação de uma estrutura de grafo de cena. Na estrutura, cada nodo representa um terreno gerado. A Figura \ref{fig:grafo2} considera que a câmera está situado acima do \emph{Terreno 0}, e assim ele possui oito nodos filhos ao seu redor.
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.3\linewidth]{img/grafo_cena2.png}}
+	\center{\includegraphics[width=0.25\linewidth]{img/grafo_cena2.png}}
 	\caption{\label{fig:grafo2} Grafo de cena e terrenos, com a câmera no Terreno 0.}
 \end{figure}
 
 Na Figura \ref{fig:grafo3}, a câmera passa a estar em cima do Terreno 5. Logo, serão gerados os terrenos 8, 9 e 10. Os terrenos 1, 4 e 6 (em branco) poderão ser excluídos, enquanto que os terrenos 0, 2, 3, 7 e 8 passarão a apontar para um novo nodo pai: o nodo que representa o terreno 5.
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.4\linewidth]{img/grafo_cena3.png}}
+	\center{\includegraphics[width=0.25\linewidth]{img/grafo_cena3.png}}
 	\caption{\label{fig:grafo3} Grafo de cena e terrenos, com a câmera no Terreno 5.}
 \end{figure}
 
 Outro aspecto levado em consideração, foi o número de terrenos gerados e o número de terrenos que estão sendo visualizados. Na Figura \ref{fig:grafo1}, os terrenos em branco foram gerados, mas não serão renderizados na tela, para economizar recursos da placa de vídeo. O número e as distâncias entre os terrenos gerados e visualizados são parâmetros do arcabouço.
 
 \begin{figure}[H]
-	\center{\includegraphics[width=0.5\linewidth]{img/grafo_cena1.png}}
+	\center{\includegraphics[width=0.45\linewidth]{img/grafo_cena1.png}}
 	\caption{\label{fig:grafo1} Visualização e geração dos terrenos.}
 \end{figure}
-
-
-
 
