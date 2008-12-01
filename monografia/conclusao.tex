@@ -1,8 +1,10 @@
 \chapter{CONCLUSÕES E TRABALHOS FUTUROS}
 O trabalho desenvolvido em POC I teve como objetivo principal estabelecer uma base para ser desenvolvida posteriormente em POC II, e também como uma forma de aprendizado de técnicas procedurais.
 
-Um ponto a ser otimizado é a cópia dos vértices para as estruturas VBO. Dessa forma, será possível diminuir o tempo total gasto com a geração procedural dos terrenos, e suavizar as transições entre terrenos.
+Um ponto a ser otimizado é a cópia dos vértices para as estruturas VBO. Dessa forma, será possível diminuir o tempo total gasto com a geração procedural dos terrenos, e suavizar as transições entre terrenos. Outro ponto que pode ser abordado é a visualização dos terrenos na medida em que eles são gerados; no caso do ruído de Perlin, a visualização poderia ser a cada \emph{octave} gerado. Terrenos mais longe da câmera poderiam também ser gerados com um número menor de \emph{octaves}.
 
-Um ponto que só foi iniciado em POC I é a geração de terrenos esféricos e deve ser abordado em POC II. Além disso, o uso de texturas também será aprofundado, possivelmente com o uso de sombras pré-calculadas \cite{slopelighting}, pois atualmente, os terrenos podem ser facilmente confundidos com nuvens, água parada, ou qualquer outro fenômeno natural. Outra questão a ser desenvolvida em POC II é uma interface gráfica mais atrativa, e uma forma eficiente de se armazenar as informações inseridas pelo usuário (possivelmente em arquivos \sigla{XML}{Extensible Markup Language}).
+Outro ponto que também pode ser explorado é processamento em paralelo, um dos temas abordados no paradigma apresentado em \cite{carlucio}. O trabalho também poderá ser migrado para a \emph{engine} \emph{PsyGen}, utilizado no artigo anterior.
+
+Um ponto que só foi iniciado em POC I é a geração de terrenos esféricos e deve ser abordado em POC II. Além disso, o uso de texturas também será aprofundado, possivelmente com o uso de sombras pré-calculadas \cite{slopelighting}, pois atualmente, os terrenos podem ser facilmente confundidos com nuvens, água parada, ou qualquer outro fenômeno natural. Outra questão a ser desenvolvida em POC II é uma \emph{interface} gráfica mais atrativa, e uma forma eficiente de se armazenar as informações inseridas pelo usuário (possivelmente em arquivos \sigla{XML}{Extensible Markup Language}).
 
 

@@ -1,115 +1,158 @@
-\begin{thebibliography}{10}
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.50 }
 
 \bibitem{luke}
-Procedural content generation.
-\newblock Disponível em:
-  \url{http://lukehalliwell.wordpress.com/2008/08/05/procedural-content-genera%
-tion/}. Acessado em: 23 nov. 2008.
+\abntrefinfo{Procedural\ldots}{PROCEDURAL\ldots}{}
+{PROCEDURAL content generation.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/lukehalliwell\-.wordpress\-.com\-/2008\-/08%
+\-/05\-/procedural-content-generation\-/$>$}{http://lukehalliwell.wordpress.co%
+m/2008/08/05/procedural-content-generation/}. Acesso em: 23 nov. 2008.}
 
 \bibitem{pixar}
-Pixar animation studios.
-\newblock Disponível em: \url{http://www.pixar.com/}. Acessado em: 23 nov.
-  2008.
+\abntrefinfo{Pixar\ldots}{PIXAR\ldots}{}
+{PIXAR Animation Studios.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.pixar\-.com\-/$>$}{http://www.pixar.c%
+om/}. Acesso em: 23 nov. 2008.}
 
 \bibitem{elite}
-Ian bell's elite pages.
-\newblock Disponível em: \url{http://www.iancgbell.clara.net/elite/}. Acessado
-  em: 23 nov. 2008.
+\abntrefinfo{Ian\ldots}{IAN\ldots}{}
+{IAN Bell's Elite pages.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.iancgbell\-.clara\-.net\-/elite\-/$>$%
+}{http://www.iancgbell.clara.net/elite/}. Acesso em: 23 nov. 2008.}
 
 \bibitem{parish}
-Yoav I~H Parish and Pascal Müller.
-\newblock Procedural modelling of cities.
-\newblock In {\em in Proc. ACM SIGGRAPH, (Los Angeles, 2001) ACM Press}, pages
-  301--308, 2001.
+\abntrefinfo{Parish e Müller}{PARISH; MüLLER}{2001}
+{PARISH, Y. I.~H.; MüLLER, P. Procedural modelling of cities. In:  \emph{in
+  Proc. ACM SIGGRAPH, (Los Angeles, 2001) ACM Press}. [S.l.: s.n.], 2001. p.
+  301--308.}
 
 \bibitem{pseudoinfinite}
-Stefan Greuter, Jeremy Parker, Nigel Stewart, and Geoff Leach.
-\newblock Real-time procedural generation of `pseudo infinite' cities.
-\newblock In {\em GRAPHITE '03: Proceedings of the 1st international conference
-  on Computer graphics and interactive techniques in Australasia and South East
-  Asia}, pages 87--ff, New York, NY, USA, 2003. ACM.
+\abntrefinfo{Greuter et al.}{GREUTER et al.}{2003}
+{GREUTER, S. et al. Real-time procedural generation of `pseudo infinite'
+  cities. In:  \emph{GRAPHITE '03: Proceedings of the 1st international
+  conference on Computer graphics and interactive techniques in Australasia and
+  South East Asia}. New York, NY, USA: ACM, 2003. p. 87--ff.
+ISBN 1-58113-578-5.}
 
 \bibitem{realtime}
-Jacob Olsen.
-\newblock Realtime procedural terrain generation.
-\newblock In {\em Department of Mathematics And Computer Science (IMADA).},
-  2004.
+\abntrefinfo{Olsen}{OLSEN}{2004}
+{OLSEN, J. Realtime procedural terrain generation. In:  \emph{Department of
+  Mathematics And Computer Science (IMADA).} [S.l.: s.n.], 2004.}
 
 \bibitem{virtual}
-Lukas Zimmerli and Paul Verschure.
-\newblock Delivering environmental presence through procedural virtual
-  environments.
-\newblock In {\em PRESENCE 2007, The 10th Annual International Workshop on
-  Presence}, 2007.
+\abntrefinfo{Zimmerli e Verschure}{ZIMMERLI; VERSCHURE}{2007}
+{ZIMMERLI, L.; VERSCHURE, P. Delivering environmental presence through
+  procedural virtual environments. In:  \emph{PRESENCE 2007, The 10th Annual
+  International Workshop on Presence}. [S.l.: s.n.], 2007.}
 
 \bibitem{mojoworld}
-Mojoworld generator.
-\newblock Disponível em: \url{http://www.mojoworld.org/}. Acessado em: 23 nov.
-  2008.
+\abntrefinfo{MojoWorld\ldots}{MOJOWORLD\ldots}{}
+{MOJOWORLD Generator.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.mojoworld\-.org\-/$>$}{http://www.moj%
+oworld.org/}. Acesso em: 23 nov. 2008.}
 
 \bibitem{speedtree}
-Speedtree | idv, inc.
-\newblock Disponível em: \url{http://www.speedtree.com/}. Acessado em: 23 nov.
-  2008.
+\abntrefinfo{SpeedTree\ldots}{SPEEDTREE\ldots}{}
+{SPEEDTREE | IDV, Inc.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.speedtree\-.com\-/$>$}{http://www.spe%
+edtree.com/}. Acesso em: 23 nov. 2008.}
 
 \bibitem{livro}
-David~S. Ebert, F.~Kenton Musgrave, Darwyn Peachey, Ken Perlin, and Steven
-  Worley.
-\newblock {\em Texturing and Modeling: A Procedural Approach}.
-\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2002.
+\abntrefinfo{Ebert et al.}{EBERT et al.}{2002}
+{EBERT, D.~S. et al. \emph{Texturing and Modeling: A Procedural Approach}. San
+  Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 2002.
+ISBN 1558608486.}
 
 \bibitem{lsystem}
-Przemyslaw Prusinkiewicz and Aristid Lindenmayer.
-\newblock {\em The algorithmic beauty of plants}.
-\newblock Springer-Verlag New York, Inc., New York, NY, USA, 1996.
+\abntrefinfo{Prusinkiewicz e Lindenmayer}{PRUSINKIEWICZ; LINDENMAYER}{1996}
+{PRUSINKIEWICZ, P.; LINDENMAYER, A. \emph{The algorithmic beauty of plants}.
+  New York, NY, USA: Springer-Verlag New York, Inc., 1996.
+ISBN 0-387-94676-4.}
 
 \bibitem{geometrias}
-Benoit~B. Mandelbrot.
-\newblock {\em The Fractal Geometry of Nature}.
-\newblock {W. H. Freeman}, August 1982.
+\abntrefinfo{Mandelbrot}{MANDELBROT}{1982}
+{MANDELBROT, B.~B. \emph{The Fractal Geometry of Nature}. {W. H. Freeman},
+  1982. Hardcover.
+ISBN 0716711869. Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.amazon\-.ca\-/exec\-/obidos\-/redirec%
+t?tag=citeulike09-20{\textbackslash}\&amp;path=ASIN\-/0716711869$>$}{http://ww%
+w.amazon.ca/exec/obidos/redirect?tag=citeulike09-20\&amp;path=ASIN/0716711869}%
+.}
 
 \bibitem{perlin}
-Ken perlin's homepage.
-\newblock Disponível em: \url{http://mrl.nyu.edu/~perlin/}. Acessado em: 23
-  nov. 2008.
+\abntrefinfo{Ken\ldots}{KEN\ldots}{}
+{KEN Perlin's homepage.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/mrl\-.nyu\-.edu\-/\~{}perlin\-/$>$}{http://%
+mrl.nyu.edu/~perlin/}. Acesso em: 23 nov. 2008.}
 
 \bibitem{figura_perlin}
-Acmc projects ,cg rendering of coral at the university of queensland.
-\newblock Disponível em:
-  \url{http://www.acmc.uq.edu.au/Projects/CG_Rendering.html}. Acessado em: 23
-  nov. 2008.
+\abntrefinfo{ACMC\ldots}{ACMC\ldots}{}
+{ACMC Projects, CG Rendering of Coral at The University of Queensland.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.acmc\-.uq\-.edu\-.au\-/Projects\-/CG{%
+\textbackslash}\underline{\
+  }Rendering\-.html$>$}{http://www.acmc.uq.edu.au/Projects/CG\_Rendering.html}.
+  Acesso em: 23 nov. 2008.}
 
 \bibitem{glfw}
-Glfw - an opengl framework.
-\newblock Disponível em: \url{http://glfw.sourceforge.net/}. Acessado em: 23
-  nov. 2008.
+\abntrefinfo{GLFW\ldots}{GLFW\ldots}{}
+{GLFW - An OpenGL Framework.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/glfw\-.sourceforge\-.net\-/$>$}{http://glfw%
+.sourceforge.net/}. Acesso em: 23 nov. 2008.}
 
 \bibitem{anttweakbar}
-Anttweakbar gui library to tweak parameters of opengl and directx applications.
-\newblock Disponível em:
-  \url{http://www.antisphere.com/Wiki/tools:anttweakbar}. Acessado em: 23 nov.
-  2008.
+\abntrefinfo{AntTweakBar\ldots}{ANTTWEAKBAR\ldots}{}
+{ANTTWEAKBAR GUI library to tweak parameters of OpenGL and DirectX
+  applications.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.antisphere\-.com\-/Wiki\-/tools:anttw%
+eakbar$>$}{http://www.antisphere.com/Wiki/tools:anttweakbar}. Acesso em: 23
+  nov. 2008.}
 
 \bibitem{devil}
-Devil - a full featured cross-platform image library.
-\newblock Disponível em: \url{http://openil.sourceforge.net/}. Acessado em: 23
-  nov. 2008.
+\abntrefinfo{DevIL\ldots}{DEVIL\ldots}{}
+{DEVIL - A full featured cross-platform Image Library.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/openil\-.sourceforge\-.net\-/$>$}{http://op%
+enil.sourceforge.net/}. Acesso em: 23 nov. 2008.}
 
 \bibitem{framework}
-Object oriented framework development.
-\newblock Disponível em:
-  \url{http://www.acm.org/crossroads/xrds7-4/frameworks.html}. Acessado em: 23
-  nov. 2008.
+\abntrefinfo{Object\ldots}{OBJECT\ldots}{}
+{OBJECT Oriented Framework Development.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.acm\-.org\-/crossroads\-/xrds7-4\-/fr%
+ameworks\-.html$>$}{http://www.acm.org/crossroads/xrds7-4/frameworks.html}.
+  Acesso em: 23 nov. 2008.}
 
 \bibitem{citygen}
-George Kelly and Hugh McCabe.
-\newblock Citygen: An interactive system for procedural city generation.
-\newblock In {\em Game Design \& Technology Workshop}, 2006.
+\abntrefinfo{Kelly e McCabe}{KELLY; MCCABE}{2006}
+{KELLY, G.; MCCABE, H. Citygen: An interactive system for procedural city
+  generation. In:  \emph{Game Design \& Technology Workshop}. [S.l.: s.n.],
+  2006.}
+
+\bibitem{carlucio}
+\abntrefinfo{Cordeiro e Chaimowicz}{CORDEIRO; CHAIMOWICZ}{2008}
+{CORDEIRO, C.~S.; CHAIMOWICZ, L. Parallel lazy amplification.
+\emph{VII Brazilian Symposium on Computer Games and Digital Entertainment,
+  2008, Belo Horizonte. SBGames 2008}, 2008.}
 
 \bibitem{slopelighting}
-Gamedev.net - 'slope lighting' terrain.
-\newblock Disponível em:
-  \url{http://www.gamedev.net/reference/articles/article1436.asp}. Acessado em:
-  23 nov. 2008.
+\abntrefinfo{GameDev\ldots}{GAMEDEV\ldots}{}
+{GAMEDEV.NET - 'Slope Lighting' Terrain.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.gamedev\-.net\-/reference\-/articles\%
+-/article1436\-.asp$>$}{http://www.gamedev.net/reference/articles/article1436.%
+asp}. Acesso em: 23 nov. 2008.}
 
 \end{thebibliography}

@@ -9,7 +9,10 @@
 % ****** DEFINIÇÕES INICIAIS ******	
 \documentclass[a4paper,12pt, normaltoc, pnumromarab, pagestart=fistchapter, tocpage=plain]{abnt}
 % Utilize a opção normalfigtabnum para numerar as figuras e tabelas por capítulo
-%\usepackage[alf]{abntcite} chamada de referencia alfabetica
+%\usepackage[alf]{abntcite} %chamada de referencia alfabetica
+
+\usepackage{hyperref}
+
 \usepackage[num]{abntcite}
 \usepackage[brazil]{babel}
 %\usepackage[utf8]{inputenc}
@@ -20,9 +23,10 @@
 \usepackage{float}
 \usepackage{geometry}
 
+
 \usepackage{url}
-\usepackage{html}
 \usepackage{multirow}
+
 
 \citebrackets[]
 
@@ -214,9 +218,10 @@
 \include{conclusao}
 
 % ********** REFERÊNCIAS **********
+%\bibliographystyle{acm}
 %\bibliographystyle{abnt-alf}	 % Existem ainda: abbrv, acm, alpha, amsalpha, amsplain
-%\bibliographystyle{abnt-num}
-\bibliographystyle{unsrt}
+\bibliographystyle{abnt-num}
+%\bibliographystyle{unsrt}
 \bibliography{monografia} % o nome do arquivo .bib com as referências
 %\include{bibliografia}															
 
