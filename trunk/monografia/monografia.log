@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=pdflatex 2008.11.30)  1 DEC 2008 12:45
+This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=pdflatex 2008.11.30)  1 DEC 2008 13:25
 entering extended mode
 **monografia.tex
 (monografia.tex
@@ -604,14 +604,14 @@ lema muito es-tu-dado no campo
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 11.
-<img/perlin.png, id=251, 703.62875pt x 497.86pt>
+<img/perlin.png, id=256, 703.62875pt x 497.86pt>
 File: img/perlin.png Graphic file (type png)
  <use img/perlin.png> [14
 
 
 
 ]
-<img/plasma.png, id=268, 301.125pt x 301.125pt>
+<img/plasma.png, id=273, 301.125pt x 301.125pt>
 File: img/plasma.png Graphic file (type png)
  <use img/plasma.png>) [15pdfTeX warning (ext4): destination with the same iden
 tifier (name{figure.abstract.2.1}) has been already used, duplicate ignored
@@ -635,15 +635,15 @@ line 9.
 
 
 
-] <img/grafo_cena2.png, id=290, 571.13374pt x 362.35374pt>
+] <img/grafo_cena2.png, id=295, 571.13374pt x 362.35374pt>
 File: img/grafo_cena2.png Graphic file (type png)
 
 <use img/grafo_cena2.png>
-<img/grafo_cena3.png, id=292, 571.13374pt x 362.35374pt>
+<img/grafo_cena3.png, id=297, 571.13374pt x 362.35374pt>
 File: img/grafo_cena3.png Graphic file (type png)
 
 <use img/grafo_cena3.png>
-<img/grafo_cena1.png, id=294, 1000.73875pt x 666.49pt>
+<img/grafo_cena1.png, id=299, 1000.73875pt x 666.49pt>
 File: img/grafo_cena1.png Graphic file (type png)
 
 <use img/grafo_cena1.png>) [17pdfTeX warning (ext4): destination with the same 
@@ -668,10 +668,10 @@ l.214 \include{metodologia}
                             <img/grafo_cena2.png (PNG copy)> <img/grafo_cena3.p
 ng (PNG copy)> <img/grafo_cena1.png (PNG copy)>] (resultados.tex
 Cap\'{\i }tulo 4.
-<img/caps/2.png, id=304, 602.25pt x 451.6875pt>
+<img/caps/2.png, id=309, 602.25pt x 451.6875pt>
 File: img/caps/2.png Graphic file (type png)
  <use img/caps/2.png>
-<img/caps/3.png, id=305, 602.25pt x 451.6875pt>
+<img/caps/3.png, id=310, 602.25pt x 451.6875pt>
 File: img/caps/3.png Graphic file (type png)
  <use img/caps/3.png> [18
 
@@ -684,10 +684,10 @@ ct.4.1}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.16 
       <img/caps/2.png (PNG copy)>]
-<img/caps/6.png, id=310, 602.25pt x 451.6875pt>
+<img/caps/6.png, id=315, 602.25pt x 451.6875pt>
 File: img/caps/6.png Graphic file (type png)
  <use img/caps/6.png>
-<img/caps/7.png, id=311, 602.25pt x 451.6875pt>
+<img/caps/7.png, id=316, 602.25pt x 451.6875pt>
 File: img/caps/7.png Graphic file (type png)
  <use img/caps/7.png> [19pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.abstract.4.2}) has been already used, duplicate ignored
@@ -702,10 +702,10 @@ bstract.4.3}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.26 
       <img/caps/3.png (PNG copy)> <img/caps/6.png (PNG copy)>]
-<img/heightmap.png, id=319, 100.375pt x 100.375pt>
+<img/heightmap.png, id=324, 100.375pt x 100.375pt>
 File: img/heightmap.png Graphic file (type png)
  <use img/heightmap.png>
-<img/caps/4.png, id=320, 602.25pt x 451.6875pt>
+<img/caps/4.png, id=325, 602.25pt x 451.6875pt>
 File: img/caps/4.png Graphic file (type png)
  <use img/caps/4.png> [20pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.abstract.4.4}) has been already used, duplicate ignored
@@ -720,7 +720,7 @@ bstract.4.5}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.38 
       <img/caps/7.png (PNG copy)> <img/heightmap.png (PNG copy)>]
-<img/caps/5.png, id=325, 602.25pt x 451.6875pt>
+<img/caps/5.png, id=330, 602.25pt x 451.6875pt>
 File: img/caps/5.png Graphic file (type png)
  <use img/caps/5.png> [21pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.abstract.4.6}) has been already used, duplicate ignored
@@ -735,10 +735,10 @@ figure.abstract.4.7}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.44 \newpage
               <img/caps/4.png (PNG copy)> <img/caps/5.png (PNG copy)>]
-<img/caps/8.png, id=332, 602.25pt x 451.6875pt>
+<img/caps/8.png, id=337, 602.25pt x 451.6875pt>
 File: img/caps/8.png Graphic file (type png)
  <use img/caps/8.png>
-<img/caps/9.png, id=333, 602.25pt x 451.6875pt>
+<img/caps/9.png, id=338, 602.25pt x 451.6875pt>
 File: img/caps/9.png Graphic file (type png)
  <use img/caps/9.png> [22pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.abstract.4.8}) has been already used, duplicate ignored
@@ -767,7 +767,7 @@ er (name{table.abstract.4.1}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.41 
-     ]) <testes/testes.png, id=351, 965.6075pt x 745.78625pt>
+     ]) <testes/testes.png, id=356, 965.6075pt x 745.78625pt>
 File: testes/testes.png Graphic file (type png)
 
 <use testes/testes.png>) (teste_variando_octaves.tex [24pdfTeX warning (ext4): 
@@ -789,9 +789,30 @@ stract.4.10}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.2 
-     <testes/testes.png (PNG copy)>]) (teste_variando_vizinhos.tex)) [25pdfTeX 
-warning (ext4): destination with the same identifier (name{table.abstract.4.4})
+     <testes/testes.png (PNG copy)>]
+<img/graficos/teste1/teste1.png, id=363, 642.4pt x 481.8pt>
+File: img/graficos/teste1/teste1.png Graphic file (type png)
+
+<use img/graficos/teste1/teste1.png>) (teste_variando_vizinhos.tex [25pdfTeX wa
+rning (ext4): destination with the same identifier (name{figure.abstract.4.11})
  has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2 
+    pdfTeX warning (ext4): destination with the same identifier (name{table.abs
+tract.4.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2 
+     <img/graficos/teste1/teste1.png (PNG copy)>]
+<img/graficos/teste2/teste2.png, id=371, 642.4pt x 481.8pt>
+File: img/graficos/teste2/teste2.png Graphic file (type png)
+
+<use img/graficos/teste2/teste2.png>)) [26pdfTeX warning (ext4): destination wi
+th the same identifier (name{figure.abstract.4.12}) has been already used, dupl
+icate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -802,13 +823,14 @@ tifier (name{table.abstract.4.5}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.216 \include{resultados}
-                          ] (conclusao.tex
+                           <img/graficos/teste2/teste2.png (PNG copy)>]
+(conclusao.tex
 Cap\'{\i }tulo 5.
-) [26
+) [27
 
 
 
-] (monografia.bbl [27
+] (monografia.bbl [28
 
 
 ])
@@ -816,15 +838,15 @@ Cap\'{\i }tulo 5.
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-[28] (monografia.aux (capa.aux) (folharosto.aux) (dedicatoria.aux)
+[29] (monografia.aux (capa.aux) (folharosto.aux) (dedicatoria.aux)
 (agradecimentos.aux) (epigrafe.aux) (resumo.aux) (abstract.aux) (introducao.aux
 ) (referecialTeorico.aux) (metodologia.aux) (resultados.aux) (conclusao.aux)) )
  
 Here is how much of TeX's memory you used:
- 6583 strings out of 95304
- 91992 string characters out of 1183031
- 170198 words of memory out of 1500000
- 9386 multiletter control sequences out of 110000
+ 6600 strings out of 95304
+ 92401 string characters out of 1183031
+ 170454 words of memory out of 1500000
+ 9396 multiletter control sequences out of 110000
  40328 words of font info for 56 fonts, out of 3000000 for 5000
  14 hyphenation exceptions out of 8191
  36i,8n,41p,988b,460s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -833,9 +855,9 @@ MiKTeX 2.7/fonts/type1/bluesky/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.7/fonts
 /type1/bluesky/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/urw/times
 /utmb8a.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/urw/times/utmr8a.pfb><C:/P
 rogram Files/MiKTeX 2.7/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (30 pages, 1395286 bytes).
+Output written on monografia.pdf (31 pages, 1418002 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 131072)
- 264 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 479 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 131072)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 

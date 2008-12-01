@@ -1,7 +1,7 @@
 set encoding iso_8859_1
 set title "Número de octaves fixo"
-set xlabel "FPS"
-set ylabel "Tempo (s)"
+set xlabel "Tempo (s)"
+set ylabel "FPS"
 set key outside below 
 set datafile separator ";"
 set terminal png
