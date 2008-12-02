@@ -1,18 +1,22 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemplo de um ru\IeC {\'\i }do de Perlin.}}{15}{figure.abstract.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ret\^angulo e seus quatro pontos.}}{15}{figure.abstract.2.2}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Grafo de cena e terrenos, com a c\^amera no Terreno 0.}}{17}{figure.abstract.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Grafo de cena e terrenos, com a c\^amera no Terreno 5.}}{17}{figure.abstract.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Visualiza\c c\~ao e gera\c c\~ao dos terrenos.}}{17}{figure.abstract.3.3}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Tela com o terreno gerado.}}{18}{figure.abstract.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Tela com o terreno gerado (exibi\c c\~ao em \emph {wireframes}).}}{19}{figure.abstract.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Tela com o terreno gerado.}}{19}{figure.abstract.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Tela com o terreno gerado (exibi\c c\~ao em \emph {wireframes}).}}{20}{figure.abstract.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de altura.}}{20}{figure.abstract.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Tela com o terreno gerado e um mapa de altura inserido.}}{21}{figure.abstract.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Tela com o terreno gerado e um mapa de altura inserido (exibi\c c\~ao em \emph {wireframes}).}}{21}{figure.abstract.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Tela com a \emph {interface} do usu\'ario (exibi\c c\~ao em \emph {wireframes}).}}{22}{figure.abstract.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Tela com a \emph {interface} do usu\'ario.}}{22}{figure.abstract.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Gr\'afico com a porcentagem dos tempos m\'edios de cada chamada em rela\c c\~ao ao tempo total m\'edio de gera\c c\~ao}}{24}{figure.abstract.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Teste variando o n\'umero de \emph {octaves}, e o n\'umero de terrenos vizinhos fixo em 2.}}{25}{figure.abstract.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Teste variando o n\'umero de terrenos vizinhos, e o n\'umero de octaves fixo.}}{26}{figure.abstract.4.12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemplo de uma cena com um carro e um ponto de luz.}}{15}{figure.listoftables.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplo de um grafo de cena.}}{15}{figure.listoftables.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de um mapa de altura.}}{16}{figure.listoftables.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Exemplo de um ru\IeC {\'\i }do de Perlin.}}{16}{figure.listoftables.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ret\^angulo e seus quatro pontos.}}{17}{figure.listoftables.2.5}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Classes representando os nodos.}}{20}{figure.listoftables.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Grafo de cena e terrenos, com a c\^amera no Terreno 0.}}{21}{figure.listoftables.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Grafo de cena e terrenos, com a c\^amera no Terreno 5.}}{21}{figure.listoftables.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Visualiza\c c\~ao e gera\c c\~ao dos terrenos.}}{21}{figure.listoftables.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Tela com o terreno gerado (exibi\c c\~ao em \emph {wireframes}).}}{22}{figure.listoftables.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Tela com o terreno gerado.}}{23}{figure.listoftables.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Tela com o terreno gerado (exibi\c c\~ao em \emph {wireframes}).}}{23}{figure.listoftables.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Tela com o terreno gerado.}}{24}{figure.listoftables.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mapa de altura inserido pelo usu\'ario.}}{24}{figure.listoftables.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Tela com o terreno gerado e um mapa de altura inserido.}}{25}{figure.listoftables.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Tela com o terreno gerado e um mapa de altura inserido (exibi\c c\~ao em \emph {wireframes}).}}{25}{figure.listoftables.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Tela com a \emph {interface} do usu\'ario (exibi\c c\~ao em \emph {wireframes}).}}{26}{figure.listoftables.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Tela com a \emph {interface} do usu\'ario.}}{26}{figure.listoftables.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Gr\'afico com a porcentagem dos tempos m\'edios de cada chamada em rela\c c\~ao ao tempo total m\'edio de gera\c c\~ao}}{28}{figure.listoftables.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Teste variando o n\'umero de \emph {octaves}, e o n\'umero de terrenos vizinhos fixo em 2.}}{29}{figure.listoftables.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Teste variando o n\'umero de terrenos vizinhos, e o n\'umero de octaves fixo.}}{30}{figure.listoftables.4.16}
