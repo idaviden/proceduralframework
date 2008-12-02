@@ -4,14 +4,14 @@
 %   Licence: LPPL (LaTeX Project Public License)
 %     You can change this file in the terms of LPPL
 %     (http://www.latex-project.org/lppl.html)
-% copyright RogÃ©rio C. <rogerioc@cesec.ufpr.br>
+% copyright Rogério C. <rogerioc@cesec.ufpr.br>
 %
-% ****** DEFINIÃ‡Ã•ES INICIAIS ******	
+% ****** DEFINIÇÕES INICIAIS ******	
 \documentclass[a4paper,12pt, normaltoc, pnumromarab, pagestart=fistchapter, tocpage=plain]{abnt}
-% Utilize a opÃ§Ã£o normalfigtabnum para numerar as figuras e tabelas por capÃ­tulo
+% Utilize a opção normalfigtabnum para numerar as figuras e tabelas por capítulo
 %\usepackage[alf]{abntcite} %chamada de referencia alfabetica
 
-%\usepackage{hyperref}
+\usepackage{hyperref}
 
 \usepackage[num]{abntcite}
 \usepackage[brazil]{babel}
@@ -32,10 +32,13 @@
 
 \geometry{a4paper,left=3cm,right=2cm,top=3cm,bottom=2cm}
 
+
+\hyphenation{a-pre-sen-ta-da e-di-to-res mo-de-los au-xi-li-\'a-lo abs-tra-ção ge-ra-ção re-a-lis-tas so-fre-rão geo-mé-tri-cas co-nhe-ci-men-to me-lho-rar}
+
 %%
 %%	Ainda em teste
 %%
-%\usepackage[bookmarks=false]{hyperref}					%Package para hyper-referÃªncias
+%\usepackage[bookmarks=false]{hyperref}					%Package para hyper-referências
 %\hypersetup{colorlinks,
 %							citecolor = black,
 %							filecolor = black,
@@ -43,21 +46,21 @@
 %							urlcolor  = blue,
 %						pdfnewwindow}
 %
-% O problema ocorre quando hÃ¡ referÃªncias do tipo \cite{} e \citeonline{}
-% HÃ¡ ainda outros problemas -> o figura, antes do nÃºmero, nÃ£o altera de cor na lista de figuras.
+% O problema ocorre quando há referências do tipo \cite{} e \citeonline{}
+% Há ainda outros problemas -> o figura, antes do número, não altera de cor na lista de figuras.
 % O mesmo ocorre na lista de tabelas.
-% O sumÃ¡rio aponta para a capa, nÃ£o para o resumo, lista, apÃªndices ou anexos correspondentes.
-% -> Funciona para capÃ­tulos.
+% O sumário aponta para a capa, não para o resumo, lista, apêndices ou anexos correspondentes.
+% -> Funciona para capítulos.
 %
 
 \makeatletter	%Para que ele entenda o @
 
-% Altera o tamanho das fontes dos capÃ­tulos e dos apÃªndices
+% Altera o tamanho das fontes dos capítulos e dos apêndices
 \renewcommand{\ABNTchapterfont}{\bfseries}
 \renewcommand{\ABNTchaptersize}{\Large}
 \renewcommand{\ABNTanapsize}{\Large}
 
-%Altera o espaÃ§amento entre dots
+%Altera o espaçamento entre dots
 %\renewcommand\@dotsep{2}
 
 %Altera forma de montagem do table of contents
@@ -122,8 +125,8 @@
 	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
 	{Tabela \normalfont #1}\nobreak \tabfillnum{#2}}
 
-% Define os comandos que montam a lista de sÃ­mbolos
-\newcommand{\listadesimbolos}{\pretextualchapter{Lista de SÃ­mbolos}\@starttoc{lsb}}
+% Define os comandos que montam a lista de símbolos
+\newcommand{\listadesimbolos}{\pretextualchapter{Lista de Símbolos}\@starttoc{lsb}}
 \newcommand{\simbolo}[2]{{\addcontentsline{lsb}{simbolo}{\numberline{#1}{#2}}}#1}
 \newcommand{\l@simbolo}[2]{
 	\vspace{-0.75cm}
@@ -144,10 +147,10 @@
 	\advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
 	{\normalfont #1}\hfil\nobreak\par}
 
-% Define o tipo de numeraÃ§Ã£o das pÃ¡ginas
+% Define o tipo de numeração das páginas
 \renewcommand{\chaptertitlepagestyle}{plain}
 
-% Altera a posiÃ§Ã£o da numeraÃ§Ã£o de pÃ¡ginas dos elementos prÃ©-textuais
+% Altera a posição da numeração de páginas dos elementos pré-textuais
 \renewcommand\pretextualchapter{
 	\if@openright\cleardoublepage\else\clearpage\fi
 	\pagestyle{\chaptertitlepagestyle}
@@ -155,14 +158,14 @@
 	\@afterindentfalse
 	\@schapter}
 
-% Altera a posiÃ§Ã£o da numeraÃ§Ã£o de pÃ¡ginas dos elementos textuais
+% Altera a posição da numeração de páginas dos elementos textuais
 \renewcommand{\ABNTchaptermark}[1]{
 	\ifthenelse{\boolean{ABNTNextOutOfTOC}}
 		{\markboth{\ABNTnextmark}{\ABNTnextmark}}
 		{\chaptermark{#1}
 		\pagestyle{\chaptertitlepagestyle}}}
 
-% Redefine o tipo de numeraÃ§Ã£o das pÃ¡ginas
+% Redefine o tipo de numeração das páginas
 \renewcommand{\ABNTBeginOfTextualPart}{
 	\renewcommand{\chaptertitlepagestyle}{plainheader}
 	\renewcommand{\thepage}{\arabic{page}}
@@ -171,11 +174,11 @@
 
 \makeatother
 
-%Altera o tamanho do parÃ¡grafo
+%Altera o tamanho do parágrafo
 \setlength{\parindent}{1.5cm}
 
 % ********************************
-% ***** InÃ­cio do Documento ******
+% ***** Início do Documento ******
 % ********************************
 \begin{document}
 
@@ -202,7 +205,7 @@
 \listadetabelas
 
 % 3 - Lista de Siglas
-% Forma de uso: \sigla{sigla}{DescriÃ§Ã£o}
+% Forma de uso: \sigla{sigla}{Descrição}
 \listadesiglas
 
 \sumario
@@ -217,32 +220,32 @@
 
 \include{conclusao}
 
-% ********** REFERÃŠNCIAS **********
+% ********** REFERÊNCIAS **********
 %\bibliographystyle{acm}
 %\bibliographystyle{abnt-alf}	 % Existem ainda: abbrv, acm, alpha, amsalpha, amsplain
 \bibliographystyle{abnt-num}
 %\bibliographystyle{unsrt}
-\bibliography{monografia} % o nome do arquivo .bib com as referÃªncias
+\bibliography{monografia} % o nome do arquivo .bib com as referências
 %\include{bibliografia}															
 
 %\include{apendice1}
 
-% \chapter{Entrada de SÃ­mbolos e Siglas}
-% \par Para fazer a entrada de um sÃ­mbolo, $\backslash$sÃ­mbolo\{\simbolo{$\sigma$}{DescriÃ§Ã£o}\} \{DescriÃ§ao\} Ã© a forma % correta. E, para definir uma sigla, $\backslash$sigla\{\sigla{ABNT}{AssociaÃ§Ã£o Brasileira de Normas TÃ©cnicas}\} % \{DescriÃ§Ã£o\} deve ser utilizado.
-%  \par Obs.: Quando a sigla ou o sÃ­mbolo aparecerem novamente no texto, nÃ£o repita o comando, para que a sigla ou sÃ­mbolo nÃ£o se repita na lista correspondente.
+% \chapter{Entrada de Símbolos e Siglas}
+% \par Para fazer a entrada de um símbolo, $\backslash$símbolo\{\simbolo{$\sigma$}{Descrição}\} \{Descriçao\} é a forma % correta. E, para definir uma sigla, $\backslash$sigla\{\sigla{ABNT}{Associação Brasileira de Normas Técnicas}\} % \{Descrição\} deve ser utilizado.
+%  \par Obs.: Quando a sigla ou o símbolo aparecerem novamente no texto, não repita o comando, para que a sigla ou símbolo não se repita na lista correspondente.
 
-% *********** APÃŠNDICES ***********
-% ** Condicionados Ã  necessidade **
+% *********** APÊNDICES ***********
+% ** Condicionados à necessidade **
 % \apendice
-% \chapter{Primeiro apÃªndice}
-% \par ApÃªndices sÃ£o textos elaborados pelo autor a fim de complementar sua argumentaÃ§Ã£o.
+% \chapter{Primeiro apêndice}
+% \par Apêndices são textos elaborados pelo autor a fim de complementar sua argumentação.
 
 % ************ ANEXOS *************
-% ** Condicionados Ã  necessidade **
+% ** Condicionados à necessidade **
 % \anexo
 % \chapter{Primeiro anexo}
-% \par Anexos sÃ£o documentos nÃ£o elaborados pelo autor, que servem de fundamentaÃ§Ã£o, comprovaÃ§Ã£o ou ilustraÃ§Ã£o.
+% \par Anexos são documentos não elaborados pelo autor, que servem de fundamentação, comprovação ou ilustração.
 
 \end{document}
 
-% Quando o nÃºmero de apÃªndices ou anexos vier a ser suficiente, Ã© recomendado fazer um sumÃ¡rio separado para os apÃªndices, localizados imediatamente antes dos apÃªndices ou anexos. Nesse caso, no sumÃ¡rio principal, apenas Ã© feito referÃªncia a este sumÃ¡rio especÃ­fico.
+% Quando o número de apêndices ou anexos vier a ser suficiente, é recomendado fazer um sumário separado para os apêndices, localizados imediatamente antes dos apêndices ou anexos. Nesse caso, no sumário principal, apenas é feito referência a este sumário específico.

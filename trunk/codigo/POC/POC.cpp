@@ -134,6 +134,7 @@ void POC::Init(){
 	perlin->InsertNode(file);
 	*/
 	//Redirect output
+	
 	freopen( "tests3.csv", "w", stdout );
 
 	double time = 0;
@@ -143,11 +144,11 @@ void POC::Init(){
 	cout << "\n";
 	cout << "FillHeightMap(); CopyVertexFromHeightMap(); BuildVBOs(); Total;";
 	cout << "\n";
-	for(int i=0; i<100; i++){
+	for(int i=0; i<1; i++){
 		
 
 		
-		perlin = new PerlinNoise(1, Vector3<float>(1.0,1.0,1.0), Vector3<float>(0,0,0), 100, 100, 343, 32, 0.5);
+		perlin = new PerlinNoise(1, Vector3<float>(1.0,1.0,1.0), Vector3<float>(0,0,0), 100, 100, 13, 8, 0.5);
 
 
 		time = glfwGetTime();
@@ -177,12 +178,19 @@ void POC::Init(){
 		cout << "\n";
 
 		//aux->SetShader();
-		//perlin->GenerateNeighbours(NULL);
+		perlin->GenerateNeighbours(NULL);
 
 		m_currentNode = perlin;
 
 
 	}
+
+	FileHeightmap* file = new FileHeightmap(1, Vector3<float>(0.5,0.5,0.5), Vector3<float>(200,100,200), 100, 100, "../POC/Content/Heightmaps/3.bmp");
+	file->FillHeightMap();
+	file->m_mesh->CopyVertexFromHeightMap();
+	file->m_mesh->BuildVBOs();
+
+	perlin->InsertNode(file);
 	
 	
 	
