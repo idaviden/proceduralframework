@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.8-beta-20080627 (MiKTeX 2.7) (preloaded format=pdflatex 2008.8.29)  2 DEC 2008 13:18
+This is pdfTeX, Version 3.1415926-1.40.8-beta-20080627 (MiKTeX 2.7) (preloaded format=pdflatex 2008.8.29)  2 DEC 2008 13:41
 entering extended mode
 **monografia.tex
 (monografia.tex
@@ -479,18 +479,17 @@ Overfull \hbox (42.67912pt too wide) in paragraph at lines 5--10
 
 [11] (introducao.tex
 Cap\'{\i }tulo 1.
-[12
-
-
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
- ("C:\Program Files\MiKTeX 2.7\tex\latex\base\omscmr.fd"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-) [13]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
+ [12
+
+
+
+]) [13]
 (referecialTeorico.tex
 Cap\'{\i }tulo 2.
 <img/grafocena_exemplo1.png, id=276, 447.6725pt x 315.1775pt>
@@ -609,13 +608,13 @@ figure.4.10}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.62 \newpage
               <img/grafo_cena3.png (PNG copy)> <img/grafo_cena1.png (PNG copy)>
-] <img/caps/1.png, id=365, 602.25pt x 451.6875pt>
+] <img/caps/1.png, id=364, 602.25pt x 451.6875pt>
 File: img/caps/1.png Graphic file (type png)
  <use img/caps/1.png>
-<img/caps/2.png, id=369, 602.25pt x 451.6875pt>
+<img/caps/2.png, id=368, 602.25pt x 451.6875pt>
 File: img/caps/2.png Graphic file (type png)
  <use img/caps/2.png>
-<img/caps/3.png, id=370, 602.25pt x 451.6875pt>
+<img/caps/3.png, id=369, 602.25pt x 451.6875pt>
 File: img/caps/3.png Graphic file (type png)
  <use img/caps/3.png> [23pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.4.11}) has been already used, duplicate ignored
@@ -630,7 +629,7 @@ l.84
                                                   \fi \fi 
 l.84 
       <img/caps/1.png (PNG copy)> <img/caps/2.png (PNG copy)>]
-<img/caps/4.png, id=376, 602.25pt x 451.6875pt>
+<img/caps/4.png, id=375, 602.25pt x 451.6875pt>
 File: img/caps/4.png Graphic file (type png)
  <use img/caps/4.png> [24pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.4.13}) has been already used, duplicate ignored
@@ -645,10 +644,10 @@ figure.4.14}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.90 \newpage
               <img/caps/3.png (PNG copy)> <img/caps/4.png (PNG copy)>]
-<img/heightmap.png, id=383, 100.375pt x 100.375pt>
+<img/heightmap.png, id=382, 100.375pt x 100.375pt>
 File: img/heightmap.png Graphic file (type png)
  <use img/heightmap.png>
-<img/caps/5.png, id=384, 602.25pt x 451.6875pt>
+<img/caps/5.png, id=383, 602.25pt x 451.6875pt>
 File: img/caps/5.png Graphic file (type png)
  <use img/caps/5.png> [25pdfTeX warning (ext4): destination with the same ident
 ifier (name{figure.4.15}) has been already used, duplicate ignored
@@ -670,11 +669,11 @@ d
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.41 
-     ]) <testes/testes.png, id=400, 965.6075pt x 745.78625pt>
+     ]) <testes/testes.png, id=399, 965.6075pt x 745.78625pt>
 File: testes/testes.png Graphic file (type png)
 
 <use testes/testes.png>) (teste_variando_octaves.tex
-<img/graficos/teste1/teste1.png, id=403, 642.4pt x 481.8pt>
+<img/graficos/teste1/teste1.png, id=402, 642.4pt x 481.8pt>
 File: img/graficos/teste1/teste1.png Graphic file (type png)
 
 <use img/graficos/teste1/teste1.png> [27pdfTeX warning (ext4): destination with
@@ -697,7 +696,7 @@ me{figure.4.17}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.6 \end{figure}
                  <testes/testes.png (PNG copy)>]) (teste_variando_vizinhos.tex
-<img/graficos/teste2/teste2.png, id=410, 642.4pt x 481.8pt>
+<img/graficos/teste2/teste2.png, id=409, 642.4pt x 481.8pt>
 File: img/graficos/teste2/teste2.png Graphic file (type png)
 
 <use img/graficos/teste2/teste2.png> [28pdfTeX warning (ext4): destination with
@@ -752,7 +751,7 @@ Here is how much of TeX's memory you used:
  9071 multiletter control sequences out of 110000
  13216 words of font info for 32 fonts, out of 1200000 for 2000
  25 hyphenation exceptions out of 8191
- 36i,8n,30p,988b,458s stack positions out of 5000i,500n,10000p,200000b,5000s
+ 36i,8n,30p,981b,458s stack positions out of 5000i,500n,10000p,200000b,5000s
  <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.7\fonts\pk\ljfo
 ur\jknappen\ec\dpi600\ecbx1440.pk> <C:\Documents and Settings\All Users\Applica
 tion Data\MiKTeX\2.7\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Docume
@@ -767,9 +766,9 @@ sers\Application Data\MiKTeX\2.7\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 our\jknappen\ec\dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 2.7/fonts/type1/blu
 esky/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy10.p
 fb>
-Output written on monografia.pdf (34 pages, 1488006 bytes).
+Output written on monografia.pdf (34 pages, 1487880 bytes).
 PDF statistics:
- 918 PDF objects out of 1000 (max. 8388607)
+ 917 PDF objects out of 1000 (max. 8388607)
  132 named destinations out of 1000 (max. 131072)
  288 words of extra memory for PDF output out of 10000 (max. 10000000)
 
