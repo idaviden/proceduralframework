@@ -3,8 +3,8 @@ No primeiro teste, foi medido o tempo gasto com a geração de terrenos. Para cada
 Nas Tabelas \ref{tabela:geracao1} e \ref{tabela:geracao2} é apresentado os tempos das chamadas às funções responsáveis pela geração dos terrenos, considerando o algoritmo de ruído de Perlin. Abaixo uma explicação sobre cada função:
 
 \begin{itemize}
-	\item {\bf FillHeightmap}: Constrói o terreno, determinando a altura e posição de cada vértice e armazena em um vetor de \emph{float}. Sua complexidade é proporcional à largura do terreno, ao comprimento e ao número de \emph{octaves}.
-	\item {\bf CopyHeightmap}: Copia o vetor, construído na função \emph{FillHeightmap} para um novo vetor VBO. Sua complexidade é proporcional à largura do terreno e ao comprimento.
+	\item {\bf FillHeightmap}: Constrói o terreno, determinando a altura e posição de cada vértice e armazena em um vetor de \emph{float}. Sua complexidade de tempo é proporcional à largura do terreno (\emph{n}), ao comprimento (\emph{m}) e ao número de \emph{octaves} (\emph{c}). \emph{O(n*m*c)}.
+	\item {\bf CopyHeightmap}: Copia o vetor, construído na função \emph{FillHeightmap} para um novo vetor VBO. Sua complexidade de tempo é proporcional à largura do terreno (\emph{n}) e ao comprimento (\emph{m}). \emph{O(n*m)}.
 	\item {\bf BuildVBOs}: Modifica os ponteiros para o desenho dos vetores VBO. É independente do tamanho do vetor.
 \end{itemize}
 
