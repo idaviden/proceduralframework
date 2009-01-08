@@ -1,0 +1,34 @@
+// main.cpp : Defines the entry point for the console application.
+//
+
+#include "TerrainMng.h"
+#include "WindowMng.h"
+#include "CubeSphere.h"
+#include "Camera.h"
+
+
+int main( int argc, char **argv ){
+	
+	//The WindowMng is responsable for opening and setting the window (something that the game would do, not the TerrainMng)
+	WindowMng window = WindowMng(1280,720);
+	window.GLInit();
+
+
+	//Simulate a game using the TerrainMng
+	TerrainMng terrain = TerrainMng();
+	terrain.m_sceneGraph->AddNode(new CubeSphere());
+
+
+	
+
+	while(true){
+		window.GLConfig();
+		window.UpdateCamera();
+
+		terrain.Update();
+		terrain.Render();
+
+		glfwSwapBuffers();
+	}
+}
+
