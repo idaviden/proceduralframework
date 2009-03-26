@@ -220,33 +220,41 @@
 				Name="SceneNodes"
 				>
 				<File
-					RelativePath=".\DynamicTerrain.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\FaultFormation.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\FileHeightmap.cpp"
-					>
-				</File>
-				<File
 					RelativePath=".\Node.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\PerlinNoise.cpp"
-					>
-				</File>
-				<File
-					RelativePath=".\StaticTerrain.cpp"
 					>
 				</File>
 				<File
 					RelativePath=".\Terrain.cpp"
 					>
 				</File>
+				<Filter
+					Name="DynamicTerrains"
+					>
+					<File
+						RelativePath=".\DynamicTerrain.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\FractalTerrain.cpp"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="StaticTerrains"
+					>
+					<File
+						RelativePath=".\FaultFormation.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\FileHeightmap.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\StaticTerrain.cpp"
+						>
+					</File>
+				</Filter>
 			</Filter>
 			<Filter
 				Name="Util"
@@ -263,6 +271,10 @@
 					RelativePath=".\Menu.cpp"
 					>
 				</File>
+			</Filter>
+			<Filter
+				Name="Fractals"
+				>
 			</Filter>
 		</Filter>
 		<Filter
@@ -306,33 +318,41 @@
 				Name="SceneNodes"
 				>
 				<File
-					RelativePath=".\DynamicTerrain.h"
-					>
-				</File>
-				<File
-					RelativePath=".\FaultFormation.h"
-					>
-				</File>
-				<File
-					RelativePath=".\FileHeightmap.h"
-					>
-				</File>
-				<File
 					RelativePath=".\Node.h"
-					>
-				</File>
-				<File
-					RelativePath=".\PerlinNoise.h"
-					>
-				</File>
-				<File
-					RelativePath=".\StaticTerrain.h"
 					>
 				</File>
 				<File
 					RelativePath=".\Terrain.h"
 					>
 				</File>
+				<Filter
+					Name="DynamicTerrains"
+					>
+					<File
+						RelativePath=".\DynamicTerrain.h"
+						>
+					</File>
+					<File
+						RelativePath=".\FractalTerrain.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="StaticTerrains"
+					>
+					<File
+						RelativePath=".\FaultFormation.h"
+						>
+					</File>
+					<File
+						RelativePath=".\FileHeightmap.h"
+						>
+					</File>
+					<File
+						RelativePath=".\StaticTerrain.h"
+						>
+					</File>
+				</Filter>
 			</Filter>
 			<Filter
 				Name="Util"
@@ -361,6 +381,10 @@
 					RelativePath=".\Vector3.h"
 					>
 				</File>
+			</Filter>
+			<Filter
+				Name="Fractals"
+				>
 			</Filter>
 		</Filter>
 		<Filter

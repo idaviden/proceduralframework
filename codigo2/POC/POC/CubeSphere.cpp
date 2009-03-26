@@ -1,87 +1,60 @@
 #include "CubeSphere.h"
+#include <iostream>
 
 
-CubeSphere::CubeSphere(){
+CubeSphere::CubeSphere(Vector3<float> position, float size, int num_divisions){
 	
-	//FillVertices();
-	//BuildVBOs();
+	m_size = size;
+	//m_numDivisions = 1;
+
+	m_vboMesh = new VBO();
+	
+	for(int i=0; i<1; i++){
+		m_faces[i] = new Square(m_vboMesh, position, size);
+	}
+
+	
+
+	m_faces[0]->SplitSquareIn4(m_vboMesh);
+	//m_faces[0]->m_squares[0]->SplitSquareIn4(m_numDivisions);
+
+	
+
+	//Fill the arrays with the new data
+	/*
+	for(int i=0; i<1; i++){
+		m_faces[i]->FillArray(m_vboMesh);
+	}
+	*/
+
+	m_vboMesh->FillBuffer();
+
+	
 	
 
 }
 
 CubeSphere::~CubeSphere(){
-	glDeleteBuffersARB(1, &m_vboVertices);
-	m_vboVertices =0;
+	m_vboMesh->DeleteBuffer();
 
-	glDeleteBuffersARB(1, &m_vboColors);
-	m_vboColors =0;
-
-}
-
-
-void CubeSphere::Render(){
-	
-
-    float bigSquareSize = 1.0;
-	int num_divisions = 25;
-    
-	float littleSquareSize = bigSquareSize / num_divisions;
-	
-	for(int i=0; i<num_divisions; i++){
-		for(int j=0; j<num_divisions; j++){
-			glBegin(GL_LINE_LOOP);
-				glVertex3f(0 + i*littleSquareSize,					0 + j*littleSquareSize,						0.0f);
-				glVertex3f(littleSquareSize + i*littleSquareSize,	0 + j*littleSquareSize,						0.0f);
-				glVertex3f(littleSquareSize + i*littleSquareSize,	littleSquareSize + j*littleSquareSize,		0.0f);
-				glVertex3f(0 + i*littleSquareSize,					littleSquareSize + j*littleSquareSize,		0.0f);
-			glEnd();
-
-		}
-		
-
-	}
-
-	
-	
-	
-	
-}
-
-/*
-void CubeSphere::FillVertices(){
+	//glDeleteBuffersARB(1, &m_vboColors);
+	//m_vboColors =0;
 
 }
 
-void CubeSphere::BuildVBOs(){
-	m_vboVertices = 0;
 
-
-	// Generate And Bind The Vertex Buffer
-	glGenBuffersARB( 1, &m_vboVertices );					// Get A Valid Name
-	glBindBufferARB( GL_ARRAY_BUFFER_ARB, m_vboVertices );			// Bind The Buffer
-	// Load The Data
-	glBufferDataARB( GL_ARRAY_BUFFER_ARB, sizeof(m_vertices)*sizeof(float), m_vertices, GL_STATIC_DRAW_ARB );
-
-}
 
 
 void CubeSphere::Render(){
 	
 	//Call the parent
 	Node::Render();
-	
 
-	glEnableClientState(GL_VERTEX_ARRAY);
+	m_vboMesh->Render();
 
-	glBindBufferARB(GL_ARRAY_BUFFER_ARB, m_vboVertices); //vertices
-	glVertexPointer( 3, GL_FLOAT, 0, (char *) NULL);
+
 
 	
-	glDrawArrays( GL_LINES, 0, sizeof(m_vertices));
-
-
-	glDisableClientState(GL_VERTEX_ARRAY);
-	glDisableClientState(GL_COLOR_ARRAY);
+	
 
 }
-*/

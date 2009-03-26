@@ -22,10 +22,10 @@ Menu::Menu(){
 	
 	
 	TwAddVarRW(bar, "Perlin Noise", TW_TYPE_FLOAT, &aux, 
-               " label='Seed' group='PerlinNoise' min=0 max=1 step=0.001 keyIncr=a keyDecr=A help='Change scene ambient.' ");
+               " label='Seed' group='FractalTerrain' min=0 max=1 step=0.001 keyIncr=a keyDecr=A help='Change scene ambient.' ");
 
 	TwAddVarRW(bar, "Perlin Noise", TW_TYPE_FLOAT, &aux, 
-               " label='Octaves' group='PerlinNoise' min=0 max=1 step=0.001 keyIncr=a keyDecr=A help='Change scene ambient.' ");
+               " label='Octaves' group='FractalTerrain' min=0 max=1 step=0.001 keyIncr=a keyDecr=A help='Change scene ambient.' ");
 
 
 

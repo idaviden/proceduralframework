@@ -90,7 +90,7 @@ void Framework::Init(){
 
 	
 	//Menu
-	m_menu = new Menu();
+	//m_menu = new Menu();
 
 	//Skybox
 	m_skybox = new Skybox();

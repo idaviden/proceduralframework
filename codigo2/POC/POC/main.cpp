@@ -16,12 +16,12 @@ int main( int argc, char **argv ){
 
 	//Simulate a game using the TerrainMng
 	TerrainMng terrain = TerrainMng();
-	terrain.m_sceneGraph->AddNode(new CubeSphere());
+	terrain.m_sceneGraph->AddNode(new CubeSphere(Vector3<float>(0,0,0),1.0f, 1));
 
 
 	
 
-	while(true){
+	while(window.isRunning()){
 		window.GLConfig();
 		window.UpdateCamera();
 
@@ -29,6 +29,7 @@ int main( int argc, char **argv ){
 		terrain.Render();
 
 		glfwSwapBuffers();
+
 	}
 }
 

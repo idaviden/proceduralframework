@@ -1,5 +1,5 @@
-#ifndef VECTOR2_H
-#define VECTOR2_H
+#ifndef Vector2_H
+#define Vector2_H
 
 template <typename T>
 class Vector2

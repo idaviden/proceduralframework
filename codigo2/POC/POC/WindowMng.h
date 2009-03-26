@@ -19,6 +19,7 @@ public:
 	void GLInit();
 	void GLConfig();
 	void UpdateCamera();
+	bool isRunning();
 };
 
 #endif

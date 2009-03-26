@@ -4,7 +4,7 @@
 Camera::Camera(Vector3<float> position, Vector3<float> up){
 	m_pos = position;
 	m_up = up;
-	m_rotation = Vector2<float>(0,140);
+	m_rotation = Vector2<float>(0,0);
 
 
 }
