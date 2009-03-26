@@ -5,7 +5,7 @@
 #include "POC.h"
 #include "FileHeightmap.h"
 #include "FaultFormation.h"
-#include "PerlinNoise.h"
+#include "FractalTerrain.h"
 #include "Heightmask.h"
 #include "Framework.h"
 #include "Random.h"
@@ -58,7 +58,7 @@ void POC::Init(){
 	*/
 	
 	/*
-	PerlinNoise* aux = new PerlinNoise(1, Vector3<float>(0,0,0), 100, 100, 31, 8, 0.5);
+	FractalTerrain* aux = new FractalTerrain(1, Vector3<float>(0,0,0), 100, 100, 31, 8, 0.5);
 	aux->FillHeightMap();
 	//aux->Normalize(255, 0);
 	aux->m_mesh->CopyVertexFromHeightMap();
@@ -68,14 +68,14 @@ void POC::Init(){
 	*/
 	/*
 
-	PerlinNoise* aux;
+	FractalTerrain* aux;
 	int tamanho_terreno = 100;
 	int num_terrenos_x = 1;
 	int num_terrenos_y = 1;
 	
 	for(int i=0; i<num_terrenos_x * tamanho_terreno; i+=tamanho_terreno){
 		for(int j=0; j<num_terrenos_y * tamanho_terreno; j+=tamanho_terreno){
-			aux = new PerlinNoise(1, Vector3<float>(0,0,0), tamanho_terreno, tamanho_terreno, 13, 1, 0.5);
+			aux = new FractalTerrain(1, Vector3<float>(0,0,0), tamanho_terreno, tamanho_terreno, 13, 1, 0.5);
 			aux->FillHeightMap();
 			aux->m_mesh->CopyVertexFromHeightMap();
 			aux->m_mesh->BuildVBOs();
@@ -139,7 +139,7 @@ void POC::Init(){
 
 	double time = 0;
 	double total = 0;
-	PerlinNoise* perlin;
+	FractalTerrain* perlin;
 	cout << "Size=100x100, Seed: 343, Octaves: 32";
 	cout << "\n";
 	cout << "FillHeightMap(); CopyVertexFromHeightMap(); BuildVBOs(); Total;";
@@ -148,7 +148,7 @@ void POC::Init(){
 		
 
 		
-		perlin = new PerlinNoise(1, Vector3<float>(1.0,1.0,1.0), Vector3<float>(0,0,0), 100, 100, 13, 8, 0.5);
+		perlin = new FractalTerrain(1, Vector3<float>(1.0,1.0,1.0), Vector3<float>(0,0,0), 25, 25, 13, 3, 0.5);
 
 
 		time = glfwGetTime();
@@ -158,6 +158,7 @@ void POC::Init(){
 		cout << time;
 		cout << "; ";
 
+		
 		time = glfwGetTime();
 		perlin->m_mesh->CopyVertexFromHeightMap();
 		time = glfwGetTime() - time;
@@ -184,14 +185,14 @@ void POC::Init(){
 
 
 	}
-
+	/*
 	FileHeightmap* file = new FileHeightmap(1, Vector3<float>(0.5,0.5,0.5), Vector3<float>(200,100,200), 100, 100, "../POC/Content/Heightmaps/3.bmp");
 	file->FillHeightMap();
 	file->m_mesh->CopyVertexFromHeightMap();
 	file->m_mesh->BuildVBOs();
 
 	perlin->InsertNode(file);
-	
+	*/
 	
 	
 	

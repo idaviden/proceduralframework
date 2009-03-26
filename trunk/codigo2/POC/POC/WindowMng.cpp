@@ -74,3 +74,9 @@ void WindowMng::UpdateCamera(){
 	m_camera->Update();
 
 }
+
+bool WindowMng::isRunning(){
+
+	return (!glfwGetKey( GLFW_KEY_ESC ) && glfwGetWindowParam( GLFW_OPENED ));
+
+}

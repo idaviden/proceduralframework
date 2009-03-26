@@ -2,30 +2,36 @@
 #define CUBESPHERE_H
 
 
-#include <vector>
-using namespace::std;
-#include "Vector3.h"
+
+#include "Vertex.h"
+#include "Square.h"
 #include "node.h"
 #include "GL/glew.h"
 #include "GL/glfw.h"
+#include "VBO.h"
 
 
 
 class CubeSphere : public Node{
 	
 	void Render();
-	void FillVertices();
-	void BuildVBOs();
+	void Update();
 
-	GLuint m_vboVertices;
-	GLuint m_vboColors;
-	GLfloat* m_vertices;
-	GLfloat* m_colors;
+	VBO* m_vboMesh;
+
+	float m_size;
+	
+
+
+	//Cube
+	Square* m_faces[6];
+	//int m_numDivisions;
 
 
 public:
-	CubeSphere();
+	CubeSphere(Vector3<float> position, float size, int num_divisions);
 	~ CubeSphere();
+	//void IncreaseDivisions(int numNewDivisions);
 	
 
 };

@@ -198,6 +198,18 @@
 					RelativePath=".\Node.cpp"
 					>
 				</File>
+				<File
+					RelativePath=".\Square.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Util"
+				>
+				<File
+					RelativePath=".\VBO.cpp"
+					>
+				</File>
 			</Filter>
 		</Filter>
 		<Filter
@@ -228,6 +240,10 @@
 					RelativePath=".\Node.h"
 					>
 				</File>
+				<File
+					RelativePath=".\Square.h"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="Util"
@@ -237,11 +253,19 @@
 					>
 				</File>
 				<File
+					RelativePath=".\VBO.h"
+					>
+				</File>
+				<File
 					RelativePath=".\Vector2.h"
 					>
 				</File>
 				<File
 					RelativePath=".\Vector3.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Vertex.h"
 					>
 				</File>
 			</Filter>

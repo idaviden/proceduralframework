@@ -275,7 +275,7 @@ void Terrain::Normalize(float maxHeight, float minHeight){
 
 
 }
-
+/*
 void Terrain::SetShader(){
 	
 	cwc::glShaderManager SM;
@@ -294,7 +294,7 @@ void Terrain::SetShader(){
 	LoadTexture("../POC/Content/Textures/grass.png", m_texture1, GL_TEXTURE1_ARB);
 	LoadTexture("../POC/Content/Textures/snow.png", m_texture2, GL_TEXTURE2_ARB);
 
-	/*
+	
 	//glActiveTexture(GL_TEXTURE0);
 	//glBindTexture(GL_TEXTURE_2D, m_texture0);
 	m_shader->setUniform1ui("tex0", m_texture0, 0);
@@ -311,9 +311,10 @@ void Terrain::SetShader(){
 	//glBindTexture(GL_TEXTURE_2D, m_texture2);
 	m_shader->setUniform1ui("tex2", m_texture2, 2);
 	//glDisable(GL_TEXTURE_2D);
-	*/
+	
 
 }
+*/
 
 
 void Terrain::LoadTexture(char* end, GLuint& texture, GLuint textureIndex){

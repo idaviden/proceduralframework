@@ -2,7 +2,7 @@
 #define NODE_H
 
 
-#include <vector>
+#include <list>
 using namespace::std;
 #include "Vector3.h"
 
@@ -10,8 +10,8 @@ using namespace::std;
 
 class Node{
 public:
-	vector<Node*> m_children;
-	vector<Node*>::iterator m_iterator;
+	list<Node*> m_children;
+	list<Node*>::iterator m_iterator;
 
 	Vector3<float> m_position;
 	
