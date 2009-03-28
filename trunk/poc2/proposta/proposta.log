@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=pdflatex 2008.12.8)  26 MAR 2009 04:40
+This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=pdflatex 2009.3.27)  27 MAR 2009 21:36
 entering extended mode
 **proposta.tex
 (proposta.tex
@@ -171,7 +171,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box27
 )
 ("C:\Program Files\MiKTeX 2.7\tex\latex\geometry\geometry.sty"
-Package: geometry 2008/11/13 v4.1 Page Geometry
+Package: geometry 2008/12/21 v4.2 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2007/12/12 v1.6 Provides the ifpdf switch (HO)
@@ -200,18 +200,18 @@ Package: `setspace' 6.7 <2000/12/01>
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 ) (proposta.aux
 (folharosto.aux) (introducao.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 ("C:\Program Files\MiKTeX 2.7\tex\context\base\supp-pdf.tex"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -278,30 +278,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 {C:/Documents and Settings/All Users/Application Data/MiKTeX/2.7/pdftex/config/
-pdftex.map}] [2]) (introducao.tex
-<figuras/1.png, id=12, 602.25pt x 451.6875pt>
+pdftex.map}]) (introducao.tex
+<figuras/1.png, id=9, 602.25pt x 451.6875pt>
 File: figuras/1.png Graphic file (type png)
  <use figuras/1.png>
-<figuras/2.png, id=13, 602.25pt x 451.6875pt>
+<figuras/2.png, id=10, 602.25pt x 451.6875pt>
 File: figuras/2.png Graphic file (type png)
  <use figuras/2.png> [2
 
 
  <figuras/1.png (PNG copy)>] [3 <figuras/2.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
 
 ("C:\Program Files\MiKTeX 2.7\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
  [4]
-<figuras/cronograma.png, id=27, 649.42625pt x 135.50626pt>
+<figuras/cronograma.png, id=24, 649.42625pt x 135.50626pt>
 File: figuras/cronograma.png Graphic file (type png)
 
 <use figuras/cronograma.png> [5 <figuras/cronograma.png (PNG copy)>]) [6]
 (proposta.bbl
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 34.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 33.
  ("C:\Program Files\MiKTeX 2.7\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [7
@@ -309,13 +309,13 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ])
 [8] (proposta.aux (folharosto.aux) (introducao.aux)) ) 
 Here is how much of TeX's memory you used:
- 2689 strings out of 95304
- 34031 string characters out of 1183032
- 89446 words of memory out of 1500000
+ 2690 strings out of 95304
+ 34030 string characters out of 1183032
+ 89527 words of memory out of 1500000
  5809 multiletter control sequences out of 110000
  14349 words of font info for 34 fonts, out of 3000000 for 5000
- 15 hyphenation exceptions out of 8191
- 29i,5n,32p,667b,307s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 16 hyphenation exceptions out of 8191
+ 29i,5n,32p,639b,309s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Documents and Settin
 gs\All Users\Application Data\MiKTeX\2.7\fonts\pk\ljfour\jknappen\ec\dpi600\ect
 t1200.pk> <C:\Documents and Settings\All Users\Application Data\MiKTeX\2.7\font
@@ -329,9 +329,9 @@ c\dpi600\ecrm1000.pk> <C:\Documents and Settings\All Users\Application Data\MiK
 TeX\2.7\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Documents and Setti
 ngs\All Users\Application Data\MiKTeX\2.7\fonts\pk\ljfour\jknappen\ec\dpi600\ec
 rm1200.pk><C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy10.pfb>
-Output written on proposta.pdf (9 pages, 617409 bytes).
+Output written on proposta.pdf (8 pages, 616367 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
+ 359 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
