@@ -7,18 +7,20 @@ O objetivo deste trabalho é continuar com o desenvolvimento do arcabouço propost
 
 \begin{figure}[H]
 	\center{\includegraphics[width=0.4\linewidth]{figuras/1.png}}
-	\caption{\label{fig:1} Terreno gerado com o arcabouço.}
+	\caption{\label{fig:1} Terreno gerado no POC I.}
 \end{figure}
 
 \begin{figure}[H]
 	\center{\includegraphics[width=0.4\linewidth]{figuras/2.png}}
-	\caption{\label{fig:2} Terreno gerado com o arcabouço.}
+	\caption{\label{fig:2} Terreno gerado no POC I.}
 \end{figure}
 
+Os terrenos gerados em POC I possuem uma série de parâmetros para alterar a sua aparência e também permitem uma navegação contínua, ou seja, o usuário pode andar livremente e novos terrenos são gerados, de acordo com a demanda.
 
-A proposta para a disciplina de POC II é adaptar o que já foi implementado e permitir também a geração e visualização de terrenos esféricos, que possam representar planetas. Há uma série de problemas a ser abordado ao longo do trabalho, como a questão de nível de detalhe (LOD), já que os terrenos terão uma escala muito maior. Além disso, será implementado também uma interface com o usuário, para que a geração dos terrenos seja feita de forma fácil.
 
-Não será implementado aqui uma \emph{engine} gráfica completa. Essas se propõe a disponibilizar para o desenvolvedor diversas funcionalidades, como animação de modelos, exportação de modelos, partículas, tratamento de entrada e saída de controles, tratamento de rede, etc. Como essas funcionalidades fogem do escopo desse trabalho (e também não cabe competir com \emph{engines} já bem estabelecidas), busca-se implementar uma plataforma que seja independente da \emph{engine}. O trabalho poderá ser tratado então como um "componente" de um aplicativo gráfico, e assim acoplado a qualquer \emph{engine} gráfica.
+A proposta para a disciplina de POC II é adaptar o que já foi implementado e permitir também a geração e visualização de terrenos esféricos, que possam representar planetas. Há uma série de problemas a serem abordados ao longo do trabalho, como a questão de nível de detalhe (LOD), já que os terrenos terão uma escala muito maior.
+
+Não será implementada aqui uma \emph{engine} gráfica completa. Essas disponibilizam para o desenvolvedor diversas funcionalidades, como animação de modelos, exportação de modelos, partículas, tratamento de entrada e saída de controles, tratamento de rede, etc. Como essas funcionalidades fogem do escopo desse trabalho, busca-se implementar uma ferramenta que seja independente da \emph{engine}. O trabalho poderá ser tratado então como um "componente" de um aplicativo gráfico, e assim acoplado a qualquer \emph{engine} gráfica.
 
 
 \section{Referencial Teórico}
@@ -26,25 +28,35 @@ Vários trabalhos publicados abordam a geração procedural de modelos. Alguns dest
 
 Algumas técnicas largamente utilizadas na geração procedural são: Sistemas de Lindenmayer (\emph{l-System})\cite{lsystem}, que, através de uma gramática, modela o crescimento de plantas; geometrias fractais \cite{geometrias}; e também ruído de Perlin (\emph{Perlin Noise}\cite{perlin}).
 
-A \emph{engine} gráfica \emph{I-Novae}\cite{infinity} apresenta uma proposta semelhante, guardada as devidas proporções. Porém, o \emph{I-Novae} é uma solução independente, que se propõe a oferecer uma série de funcionalidades esperadas de uma \emph{engine}. Como este trabalho não propõe uma \emph{engine}, ele se torna muito mais flexível. Espera-se que, no final, ele possa ser integrado facilmente a qualquer motor. Dessa forma, será possível abstrair certas funcionalidades, como animação de modelos, partículas, exportadores de modelos, etc., já que essas serão providas pela \emph{engine}.
+A \emph{engine} gráfica \emph{I-Novae}\cite{infinity} apresenta uma proposta semelhante ao deste trabalho. Porém, a \emph{I-Novae} é uma solução independente, que se propõe a oferecer uma série de funcionalidades esperadas de uma \emph{engine}. Como este trabalho não propõe uma \emph{engine}, ele se torna muito mais flexível, podendo ser integrado a qualquer outra \emph{engine} já existente.
 
 
 
 \section{Metodologia}
 \subsection{Tipo de Pesquisa}
-O trabalho proposto é uma pesquisa de natureza aplicada, pois busca aplicar um conhecimento teórico (técnicas de geração procedural) e obter um resultado prático na forma de um arcabouço e tem um  objetivo exploratório. A pesquisa se dá em laboratório, pois se trata de um ambiente controlado.
+O trabalho proposto é uma pesquisa de natureza aplicada, pois busca aplicar um conhecimento teórico (técnicas de geração procedural) e obter um resultado prático na forma de uma ferramenta e tem um  objetivo exploratório. A pesquisa se dá em laboratório, pois se trata de um ambiente controlado.
 
 \subsection{Procedimento Metodológico}
-O primeiro passo do trabalho será a adaptação do que já foi feito para a visualização de terrenos esféricos. Um pequeno estudo será feito e, caso necessário, será implementado um algoritmo de nível de detalhe, provavelmetne o \emph{Chunked LOD}\cite{chunked}.
+O primeiro passo do trabalho será a adaptação do que já foi feito, na disciplina de POC I, para a visualização de terrenos esféricos. Um estudo será feito e, caso necessário, será implementado um algoritmo de nível de detalhe, provavelmetne o \emph{Chunked LOD}\cite{chunked}. A seguir, o trabalho será acoplado a uma \emph{engine} gráfica.
 
 O último passo será a adição de efeitos visuais, como textura, sombra e efeitos atmosféricos.
 
+A lista abaixo apresenta os passos já abordados na disciplina de POC I:
 
 \begin{itemize}
-\item Etapa 1: Adaptação para a visualização de terrenos esféricos.
-\item Etapa 2: Implementação de um algoritmo de nível de detalhe.
-\item Etapa 3: Adição de texturas.
-\item Etapa 4: Adição de sombras.
+\item Etapa 1: Estudo das soluções já existentes.
+\item Etapa 2: Início do desenvolvimento.
+\item Etapa 3: Geração de terrenos planos com base em mapas de altura.
+\item Etapa 4: Geração de terrenos planos proceduralmente.
+\end{itemize}
+
+As quatro etapas foram concluídas. Dessa forma, as seguintes etapas serão abordadas ao longo da disciplina de POC II:
+
+\begin{itemize}
+\item Etapa 1: Adaptação para a visualização de terrenos esféricos - O arcabouço desenvolvido em POC I será modificado para que seja possível mapear as posições do terreno em uma esfera.
+\item Etapa 2: Implementação de um algoritmo de nível de detalhe - Como a complexidade do terreno tende a aumentar (maior número de polígonos), poderá ser necessário a implementação de um algoritmo de nível de detalhe.
+\item Etapa 3: Acoplamento a uma \emph{engine} gráfica.
+\item Etapa 4: Adição de efeitos visuais.
 \end{itemize}
 
 
@@ -54,7 +66,7 @@ Baseado nas etapas descritas anteriormente, o seguinte cronograma foi montado:
 \begin{center}
 \begin{figure}[H]
 	\center{\includegraphics[width=0.5\linewidth]{figuras/cronograma.png}}
-	\caption{\label{fig:cronograma} Cronograma.}
+	\caption{\label{fig:cronograma} Cronograma para a disciplina de POC II.}
 \end{figure}
 \end{center}
 
@@ -64,6 +76,6 @@ Ao final do trabalho, espera-se que seja possível:
 
 \begin{itemize}
 \item Visualização de um planeta em tempo-real e gerado proceduralmente.
-\item Acoplamento com uma \emph{engine} gráfica.
+\item Acoplamento a uma \emph{engine} gráfica.
 \end{itemize}
 
